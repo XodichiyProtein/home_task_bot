@@ -1,0 +1,10 @@
+25-08-25 12:21:12 | [INFO] aiogram.dispatcher | Start polling
+25-08-25 12:21:13 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+25-08-25 12:28:57 | [ERROR] aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+25-08-25 12:28:57 | [WARNING] aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6976486638)
+25-08-25 12:29:09 | [INFO] aiogram.dispatcher | Connection established (tryings = 1, bot id = 6976486638)
+25-08-25 12:29:09 | [ERROR] aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+25-08-25 12:29:09 | [WARNING] aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6976486638)
+25-08-25 12:29:20 | [INFO] aiogram.dispatcher | Connection established (tryings = 1, bot id = 6976486638)
+25-08-25 19:28:21 | [INFO] aiogram.dispatcher | Start polling
+25-08-25 19:28:21 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'

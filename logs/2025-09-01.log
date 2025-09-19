@@ -1,0 +1,21 @@
+01-09-25 08:08:20 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 08:08:20 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+01-09-25 17:56:25 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 17:56:25 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+01-09-25 17:56:34 | [INFO] aiogram.event | Update id=732061009 is handled. Duration 995 ms by bot id=6976486638
+01-09-25 17:56:35 | [INFO] aiogram.event | Update id=732061010 is handled. Duration 243 ms by bot id=6976486638
+01-09-25 17:56:37 | [INFO] aiogram.event | Update id=732061011 is handled. Duration 249 ms by bot id=6976486638
+01-09-25 17:56:42 | [INFO] aiogram.event | Update id=732061012 is handled. Duration 528 ms by bot id=6976486638
+01-09-25 17:56:44 | [INFO] src.table_data | Пользователь добавил домашнюю работу, Русский Пятница
+01-09-25 17:56:45 | [INFO] aiogram.event | Update id=732061013 is handled. Duration 812 ms by bot id=6976486638
+01-09-25 17:56:47 | [INFO] aiogram.event | Update id=732061014 is handled. Duration 276 ms by bot id=6976486638
+01-09-25 17:56:49 | [INFO] aiogram.event | Update id=732061015 is handled. Duration 298 ms by bot id=6976486638
+01-09-25 17:56:51 | [INFO] aiogram.event | Update id=732061016 is handled. Duration 665 ms by bot id=6976486638
+01-09-25 18:11:39 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 18:11:40 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+01-09-25 18:12:10 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 18:12:10 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+01-09-25 18:21:55 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 18:21:56 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
+01-09-25 22:16:43 | [INFO] aiogram.dispatcher | Start polling
+01-09-25 22:16:43 | [INFO] aiogram.dispatcher | Run polling for bot @crocpatbot id=6976486638 - 'Homework save'
