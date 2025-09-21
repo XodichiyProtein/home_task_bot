@@ -1,23 +1,18 @@
+# src/handlers.py
+
 import logging
 from aiogram import types, Router
 from aiogram.types.input_file import FSInputFile
 
-from src.config import ALLOW_USER
 import src.config as conf
 from src.menus.base import get_base_menu
+from src.menus.class_select import get_class_select_menu
 import src.state as st
+from src.file_data import get_table_from_file
+from src.table_data import HomeworkDataFrame
 
 logger = logging.getLogger(__name__)
 dp = Router()
-
-
-def allow_user(message: types.Message | types.CallbackQuery) -> bool:
-    """
-    Проверяет разрешенный ли пользователь, по chat.id либо по from_user.id
-    """
-    if message and message.from_user and message.from_user.id in ALLOW_USER:
-        return True
-    return False
 
 
 @dp.message()
@@ -25,24 +20,52 @@ async def echo_message(message: types.Message):
     """
     Обработчик сообщений пользователя
     """
-    if allow_user(message):
-        if not st.remove and st.day and st.subject and st.hw is None:
-            if conf.manager and message.text:
-                if not conf.manager.set_homework(st.subject, st.day, message.text):
-                    logger.error("Не удалось поставить дз")
+    user_id = message.from_user.id
+    username = message.from_user.username or "N/A"
+    
+    # Добавляем user_id и username в контекст логгирования
+    log_extra = {'user_id': user_id, 'username': username}
+    
+    class_name = conf.get_user_class(user_id)
+    
+    # Шаг 1: Проверка первого запуска (выбора класса)
+    if not class_name:
+        logging.info("Пользователь %d (username: %s) начал выбор класса.", user_id, username, extra=log_extra)
+        text, keyboard = get_class_select_menu()
+        await message.answer(text, reply_markup=keyboard)
+        return
+        
+    # Шаг 2: Инициализация менеджера для пользователя
+    if not conf.manager:
+        try:
+            pd_table = get_table_from_file(class_name)
+            conf.set_manager(HomeworkDataFrame(pd_table, class_name))
+            logging.info("Менеджер ДЗ инициализирован для класса: %s", class_name, extra=log_extra)
+        except Exception as e:
+            logging.error("Ошибка инициализации менеджера для класса %s: %s", class_name, e, extra=log_extra)
+            await message.answer("Произошла ошибка при загрузке данных вашего класса. Попробуйте позже.")
+            return
 
-                st.day = None
-                st.subject = None
-                st.hw = None
-
-        menu = get_base_menu()
-        if menu:
-            text, keyboard, photo_path = menu
-            if photo_path:
-                await message.answer_photo(
-                    photo=FSInputFile(photo_path),
-                    caption=text,
-                    reply_markup=keyboard,
-                )
+    # Шаг 3: Основная логика работы
+    if not st.remove and st.day and st.subject and st.hw is None:
+        if conf.manager and message.text:
+            if not conf.manager.set_homework(st.subject, st.day, message.text):
+                logging.error("Не удалось поставить дз для пользователя %d", user_id, extra=log_extra)
             else:
-                await message.answer(text, reply_markup=keyboard)
+                logging.info("Пользователь %d добавил ДЗ для %s %s", user_id, st.subject.value, st.day.value, extra=log_extra)
+
+            st.day = None
+            st.subject = None
+            st.hw = None
+
+    menu = get_base_menu()
+    if menu:
+        text, keyboard, photo_path = menu
+        if photo_path:
+            await message.answer_photo(
+                photo=FSInputFile(photo_path),
+                caption=text,
+                reply_markup=keyboard,
+            )
+        else:
+            await message.answer(text, reply_markup=keyboard)
