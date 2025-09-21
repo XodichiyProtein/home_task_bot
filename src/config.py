@@ -48,8 +48,23 @@ CLASS_CONFIG: Dict[int, List[str]] = {
     8: ["А", "Б"],
     9: ["А", "Б"],
     10: ["А"],
-    11: ["Б"],
+    11: ["А"],
 }
+
+# НОВАЯ ЛОГИКА: Список ID пользователей, которым разрешено менять класс
+PRIVILEGED_USERS: List[int] = []
+privileged_users_str = os.getenv("PRIVILEGED_USERS")
+if privileged_users_str:
+    try:
+        # Разбиваем строку по запятой и конвертируем каждый элемент в int
+        PRIVILEGED_USERS = [
+            int(uid.strip()) for uid in privileged_users_str.split(',') if uid.strip().isdigit()
+        ]
+    except Exception as e:
+        logging.error(f"Ошибка при парсинге PRIVILEGED_USERS из .env: {e}")
+
+# ... (остальной код config.py, включая load/save_user_classes, clear_user_class, setup_logging и т.д.)
+# Убедитесь, что функции get_user_class, set_user_class и clear_user_class сохранены
 
 def load_user_classes():
     """Загрузка данных пользователей при запуске."""

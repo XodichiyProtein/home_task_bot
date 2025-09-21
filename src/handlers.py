@@ -58,7 +58,7 @@ async def echo_message(message: types.Message):
             st.subject = None
             st.hw = None
 
-    menu = get_base_menu()
+    menu = get_base_menu(user_id)
     if menu:
         text, keyboard, photo_path = menu
         if photo_path:

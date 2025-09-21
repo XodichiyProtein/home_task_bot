@@ -12,4 +12,8 @@ def get_subj_menu():
         button = InlineKeyboardButton(text=subj, callback_data=f"subj_{subj}")
         keyboard.inline_keyboard.append([button])
 
+    # Добавление кнопки "Назад"
+    back_button = InlineKeyboardButton(text="Назад", callback_data="back_to_main")
+    keyboard.inline_keyboard.append([back_button])
+
     return output_message, keyboard

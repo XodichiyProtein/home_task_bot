@@ -14,6 +14,7 @@ import src.config as conf
 import src.state as st
 from src.file_data import get_table_from_file
 from src.table_data import HomeworkDataFrame
+from src.menus.class_select import get_class_select_menu # Убедитесь, что этот импорт есть
 
 logger = logging.getLogger(__name__)
 dp = Router()
@@ -23,6 +24,25 @@ async def delete(call):
     await bot.delete_message(
         chat_id=call.message.chat.id, message_id=call.message.message_id
     )
+
+# Функция для отображения главного меню. Теперь принимает user_id.
+async def show_base_menu(call: types.CallbackQuery, message: types.Message, user_id: int):
+    # Передаем user_id в get_base_menu
+    menu = get_base_menu(user_id)
+    if menu:
+        text, keyboard, photo_path = menu
+        if photo_path:
+            await message.answer_photo(
+                photo=FSInputFile(photo_path),
+                caption=text,
+                reply_markup=keyboard,
+            )
+        else:
+            await message.answer(text, reply_markup=keyboard)
+    else:
+        # Если менеджер не установлен (т.е. класс не выбран), показываем выбор класса
+        class_menu = get_class_select_menu()
+        await message.answer(class_menu[0], reply_markup=class_menu[1])
 
 
 # Обработчик нажатий на кнопки
@@ -68,20 +88,26 @@ async def handle_category_callback(callback: types.CallbackQuery):
                 await callback.message.answer("Произошла ошибка при загрузке данных вашего класса. Попробуйте позже.")
                 return
 
-            menu = get_base_menu()
-            if menu:
-                text, keyboard, photo_path = menu
-                if photo_path:
-                    await callback.message.answer_photo(
-                        photo=FSInputFile(photo_path),
-                        caption=text,
-                        reply_markup=keyboard,
-                    )
-                else:
-                    await callback.message.answer(text, reply_markup=keyboard)
+            await show_base_menu(callback, callback.message, user_id) # Изменено
 
         # Основная логика (работает только после выбора класса)
         elif conf.manager and conf.get_user_class(user_id):
+            
+            # --- Обработка кнопки "Назад" для возврата в главное меню ---
+            if data == "back_to_main":
+                await delete(callback)
+                st.remove = False # Сброс режима удаления
+                await show_base_menu(callback, callback.message, user_id) # Изменено
+                return
+            
+            # --- Обработка кнопки "Назад" для возврата к выбору предмета ---
+            elif data == "back_to_subj_select":
+                await delete(callback)
+                menu = get_subj_menu()
+                if menu:
+                    await callback.message.answer(text=menu[0], reply_markup=menu[1])
+                return
+
             if "main_menu_" in data:
                 button_id = None
                 try:
@@ -90,18 +116,53 @@ async def handle_category_callback(callback: types.CallbackQuery):
                 except (ValueError, RuntimeError) as e:
                     logging.error("Не получилось получить button_id для пользователя %d: %s", user_id, e, extra=log_extra)
 
-                if button_id == 1:
+                if button_id == 1: # Добавить ДЗ
                     await delete(callback)
                     menu = get_subj_menu()
                     if menu:
                         await callback.message.answer(text=menu[0], reply_markup=menu[1])
 
-                elif button_id == 2:
+                elif button_id == 2: # Удалить ДЗ
                     await delete(callback)
                     st.remove = True
                     menu = get_subj_menu()
                     if menu:
                         await callback.message.answer(text=menu[0], reply_markup=menu[1])
+                
+                elif button_id == 3: # Обновить расписание
+                    await delete(callback)
+                    class_name = conf.get_user_class(user_id)
+                    logging.info("Пользователь %d запросил обновление расписания для класса %s", user_id, class_name, extra=log_extra)
+                    
+                    try:
+                        # Заново загружаем данные из файла
+                        pd_table = get_table_from_file(class_name)
+                        # Обновляем менеджер, чтобы он использовал новые данные
+                        conf.set_manager(HomeworkDataFrame(pd_table, class_name))
+                        logging.info("Менеджер ДЗ успешно обновлен для класса: %s", class_name, extra=log_extra)
+                        
+                        # Отображаем обновленное главное меню
+                        await show_base_menu(callback, callback.message, user_id) # Изменено
+                        
+                    except Exception as e:
+                        logging.error("Ошибка при обновлении менеджера для класса %s: %s", class_name, e, extra=log_extra)
+                        await callback.message.answer("Произошла ошибка при обновлении данных. Попробуйте позже.")
+                
+                elif button_id == 4: # НОВЫЙ БЛОК: Изменить класс
+                    if user_id in conf.PRIVILEGED_USERS:
+                        await delete(callback)
+                        # Удаляем информацию о текущем классе пользователя
+                        conf.clear_user_class(user_id) 
+                        conf.set_manager(None) # Обнуляем менеджер
+                        
+                        # Показываем меню выбора класса
+                        menu = get_class_select_menu()
+                        await callback.message.answer(menu[0], reply_markup=menu[1])
+                    else:
+                        # Защита от не-избранных пользователей
+                        await callback.answer("У вас нет прав для изменения класса.", show_alert=True)
+                        logging.warning("Пользователь %d (не избранный) попытался изменить класс.", user_id, extra=log_extra)
+
 
             elif "subj_" in data:
                 await delete(callback)
@@ -133,19 +194,7 @@ async def handle_category_callback(callback: types.CallbackQuery):
                         st.hw = None
                         st.remove = False
                     
-                    menu = get_base_menu()
-                    if menu:
-                        text, keyboard, photo_path = menu
-                        if photo_path:
-                            await callback.message.answer_photo(
-                                photo=FSInputFile(photo_path),
-                                caption=text,
-                                reply_markup=keyboard,
-                            )
-                        else:
-                            await callback.message.answer(
-                                text, reply_markup=keyboard
-                            )
+                    await show_base_menu(callback, callback.message, user_id) # Изменено
 
                 else:
                     text = get_hw_menu()
