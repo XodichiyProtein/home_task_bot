@@ -1,9 +1,0 @@
-10-09-25 23:06:12 | [INFO] aiogram.dispatcher | Start polling
-10-09-25 23:06:12 | [INFO] aiogram.dispatcher | Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
-10-09-25 23:06:15 | [INFO] aiogram.event | Update id=311887095 is handled. Duration 1343 ms by bot id=7610043618
-10-09-25 23:06:57 | [INFO] aiogram.event | Update id=311887096 is handled. Duration 718 ms by bot id=7610043618
-10-09-25 23:07:02 | [INFO] aiogram.event | Update id=311887097 is handled. Duration 437 ms by bot id=7610043618
-10-09-25 23:07:04 | [INFO] aiogram.event | Update id=311887098 is handled. Duration 313 ms by bot id=7610043618
-10-09-25 23:07:07 | [INFO] aiogram.event | Update id=311887099 is handled. Duration 296 ms by bot id=7610043618
-10-09-25 23:07:20 | [INFO] src.table_data | Пользователь добавил домашнюю работу, Математика Понедельник
-10-09-25 23:07:22 | [INFO] aiogram.event | Update id=311887100 is handled. Duration 1125 ms by bot id=7610043618

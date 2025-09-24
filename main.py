@@ -1,29 +1,23 @@
-import logging
+# main.py
 import asyncio
-from aiogram import Dispatcher
-from src.file_data import get_table_from_file
-from src.table_data import HomeworkDataFrame
-from src.config import setup_logger, bot, set_manager
-from src.handlers import dp as handlers_dp
-from src.button_handle import dp as buttons_dp
-
-logger = logging.getLogger(__name__)
-
-dp = Dispatcher()
-
-dp.include_router(handlers_dp)
-dp.include_router(buttons_dp)
-
-
-def setup_table():
-    pd_table = get_table_from_file()
-    data_frame = HomeworkDataFrame(pd_table)
-    set_manager(data_frame)
+from aiogram import Bot, Dispatcher
+from config import BOT_TOKEN, DOWNLOAD_DIR
+from db.database import create_tables
+from handlers import router
+import os
 
 
 async def main():
-    setup_logger()
-    setup_table()
+    create_tables()
+    if not os.path.exists(DOWNLOAD_DIR):
+        os.makedirs(DOWNLOAD_DIR)
+
+    bot = Bot(token=BOT_TOKEN)
+    dp = Dispatcher()
+
+    dp.include_router(router)
+
+    print("Bot started...")
     await dp.start_polling(bot)
 
 
@@ -31,4 +25,4 @@ if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logger.info("Bot interrupted and stopped.")
+        print("Bot stopped.")
