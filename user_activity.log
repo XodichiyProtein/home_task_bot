@@ -1,0 +1,26 @@
+2025-09-25 12:45:38,216 - [INFO] - UserID:8361453980 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: None
+2025-09-25 12:45:38,219 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 12:45:38,219 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 12:45:38,219 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 12:45:47,528 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_developer_menu - Developer menu access attempt. Action: access
+2025-09-25 12:45:48,685 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:50,472 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:51,175 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:51,528 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:52,823 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:53,519 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:53,742 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:53,976 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:54,355 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 12:45:58,878 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:35:12,571 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 14:35:14,654 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:35:49,953 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 14:35:52,353 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:35:55,343 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:37:59,634 - [INFO] - UserID:6221996571 - Action:MESSAGE - Handler:cmd_start - User started bot. Class set: (9, 'А')
+2025-09-25 14:38:31,777 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:38:38,511 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:38:40,677 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:38:41,924 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-25 14:38:43,714 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.

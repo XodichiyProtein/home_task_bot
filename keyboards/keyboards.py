@@ -10,6 +10,7 @@ LETTER_PREFIX = "select_letter_"
 MENU_PREFIX = "menu_"
 DEV_PREFIX = "dev_"
 EDIT_HOMEWORK_PREFIX = "edit_hw_"
+BACK_PREFIX = "back_"
 
 
 def get_edit_homework_keyboard(
@@ -24,13 +25,18 @@ def get_edit_homework_keyboard(
     builder = InlineKeyboardBuilder()
 
     for number in lesson_numbers:
-        # Теперь callback_data включает и дату, и номер урока
         builder.button(
             text=f"Урок {number}",
             callback_data=f"{EDIT_HOMEWORK_PREFIX}{date_str}:{number}",
         )
 
-    builder.adjust(3)
+    builder.button(
+        text="⬅️ Назад к расписанию",
+        callback_data=f"{BACK_PREFIX}main-menu",
+    )
+
+    # 2. Корректируем расположение: 3 кнопки в ряду, затем 1 кнопка "Назад"
+    builder.adjust(3, 1)
     return builder.as_markup()
 
 
@@ -64,7 +70,7 @@ def get_letter_keyboard(
             callback_data=f"{LETTER_PREFIX}{class_num}_{letter}",
         )
 
-    builder.adjust(3)
+    builder.adjust(3, 3, 3)
     return builder.as_markup()
 
 
@@ -82,19 +88,17 @@ def get_main_menu_keyboard(
     if current_center_date is None:
         current_center_date = datetime.now()
 
-    # minus_2_days = current_center_date - timedelta(days=2)
     minus_1_day = current_center_date - timedelta(days=1)
     plus_1_day = current_center_date + timedelta(days=1)
-    # plus_2_days = current_center_date + timedelta(days=2)
 
     # Формат даты для отображения на кнопке
     display_format = "%d.%m"
     callback_format = "%Y-%m-%d"  # Формат для передачи в callback
 
     # Кнопки первого ряда
-    builder.button(text="📚 Объявление", callback_data=f"{MENU_PREFIX}announcement")
-    builder.button(text="😎 В разработке", callback_data=f"{MENU_PREFIX}test")
-    builder.button(text="☎️ Связь", callback_data=f"{MENU_PREFIX}connection")
+    # builder.button(text="📚 Объявление", callback_data=f"{MENU_PREFIX}announcement")
+    # builder.button(text="😎 В разработке", callback_data=f"{MENU_PREFIX}test")
+    # builder.button(text="☎️ Связь", callback_data=f"{MENU_PREFIX}connection")
 
     builder.button(
         text="<",
@@ -119,12 +123,11 @@ def get_main_menu_keyboard(
 
     # Переставляем порядок, чтобы кнопки дат были во втором ряду
     if is_developer:
-        builder.button(
-            text="💻 Меню Разработчика", callback_data=f"{DEV_PREFIX}dev_access"
-        )
-        builder.adjust(3, 5, 1)
+        builder.button(text="💻 Меню Разработчика", callback_data=f"{DEV_PREFIX}dev")
+        # builder.adjust(3, 5, 1)
+        builder.adjust(5, 1)
     else:
-        builder.adjust(3, 5)
+        builder.adjust(5)
 
     return builder.as_markup()
 

@@ -1,6 +1,6 @@
 from states.dev_states import EditHomeworkStates
 
-from aiogram import types, Router, F
+from aiogram import types, Router, F, Bot
 from aiogram.fsm.context import FSMContext
 from aiogram.types import BufferedInputFile
 
@@ -18,9 +18,11 @@ from keyboards.keyboards import (
     get_letter_keyboard,
     get_main_menu_keyboard,
     get_developer_menu_keyboard,
+    BACK_PREFIX,
 )
 
 from utils.parser import create_schedule_image, get_lesson_numbers, edit_homework
+
 from keyboards.keyboards import get_edit_homework_keyboard
 
 from datetime import datetime, timedelta
@@ -72,6 +74,7 @@ async def callback_show_date_data(callback: types.CallbackQuery):
 
     # Отправляем изображение и клавиатуру для редактирования
     image = BufferedInputFile(schedule_image_buffer.getvalue(), filename="schedule.png")
+    await callback.message.delete()  # Удаляем предыдущее сообщение с кнопками дат
 
     await callback.message.answer_photo(
         photo=image,
@@ -112,8 +115,8 @@ async def callback_scroll_left(callback: types.CallbackQuery):
 async def callback_select_class(callback: types.CallbackQuery):
     await callback.answer()
     if get_user_class(callback.from_user.id):
-        await callback.message.edit_text(
-            "Ваш класс уже установлен. Изменение невозможно.", reply_markup=None
+        await callback.answer(
+            "Ваш класс уже установлен. Изменение невозможно.", show_alert=True
         )
         return
     class_num_str = callback.data.split("_")[-1]
@@ -128,10 +131,7 @@ async def callback_select_class(callback: types.CallbackQuery):
 @router.callback_query(F.data.startswith(LETTER_PREFIX))
 async def callback_select_letter(callback: types.CallbackQuery):
     if get_user_class(callback.from_user.id):
-        await callback.answer("Класс уже установлен!")
-        await callback.message.edit_text(
-            "Ваш класс уже установлен. Изменение невозможно.", reply_markup=None
-        )
+        await callback.answer("Класс уже установлен!", show_alert=True)
         return
     _, _, class_num_str, class_letter = callback.data.split("_")
     class_num = int(class_num_str)
@@ -150,7 +150,7 @@ async def callback_main_menu(callback: types.CallbackQuery):
     await callback.answer()
     action = callback.data.split("_")[-1]
     user_id = callback.from_user.id
-    if action == "dev_access":
+    if action == "dev":
         if user_id in DEVELOPER_IDS:
             await callback.message.edit_text(
                 "💻 **Меню Разработчика**",
@@ -161,6 +161,7 @@ async def callback_main_menu(callback: types.CallbackQuery):
             await callback.message.answer(
                 "⛔️ **Доступ запрещен.** Это меню только для разработчиков.",
                 parse_mode="Markdown",
+                show_alert=True,
             )
             is_dev = user_id in DEVELOPER_IDS
             await callback.message.edit_reply_markup(
@@ -199,8 +200,18 @@ async def callback_edit_homework(callback: types.CallbackQuery, state: FSMContex
 
 
 @router.message(EditHomeworkStates.waiting_for_new_homework, F.text)
-async def process_new_homework_input(message: types.Message, state: FSMContext):
+async def process_new_homework_input(
+    message: types.Message, state: FSMContext, bot: Bot
+):
     user_input = message.text.strip()
+
+    try:
+        await bot.delete_message(
+            chat_id=message.chat.id, message_id=message.message_id - 1
+        )
+        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
+    except Exception:
+        pass
 
     # Check if the user wants to cancel
     if user_input.lower() == "/cancel":
@@ -239,3 +250,22 @@ async def process_new_homework_input(message: types.Message, state: FSMContext):
     await message.answer(
         "Выберите следующее действие:", reply_markup=get_main_menu_keyboard(is_dev)
     )
+
+
+@router.callback_query(F.data.startswith(BACK_PREFIX))
+async def callback_back_action(callback: types.CallbackQuery):
+    await callback.answer()
+
+    action = callback.data.split("_")[-1]  # Получаем "main_menu"
+    user_id = callback.from_user.id
+    is_dev = user_id in DEVELOPER_IDS
+    if action == "main-menu":
+        # 1. Удаляем предыдущее сообщение (фото с уроками)
+        await callback.message.delete()
+
+        # 2. Отправляем НОВОЕ сообщение с Главным меню
+        await callback.message.answer(
+            "🏠 Главное меню:", reply_markup=get_main_menu_keyboard(is_dev)
+        )
+    else:
+        await callback.answer("Действие не распознано.")

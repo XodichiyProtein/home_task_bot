@@ -19,12 +19,22 @@ async def callback_developer_menu(callback: types.CallbackQuery, state: FSMConte
     try:
         user_id = callback.from_user.id
         if user_id not in DEVELOPER_IDS:
-            await callback.answer("⛔️ Недостаточно прав для этого действия.")
+            await callback.answer(
+                "⛔️ Недостаточно прав для этого действия.", show_alert=True
+            )
             return
-        await callback.answer()
         action = callback.data.split("_")[-1]
 
-        if action == "TableAdd":
+        if action == "dev":  # <-- ИСПРАВЛЕНИЕ: ДОБАВЛЕНО ДЕЙСТВИЕ ДЛЯ ОТКРЫТИЯ МЕНЮ
+            await callback.message.edit_text(
+                "💻 **Меню Разработчика**",
+                parse_mode="Markdown",
+                reply_markup=get_developer_menu_keyboard(),
+            )
+            await callback.answer()  # Подтверждаем, что действие выполнено
+            return
+
+        elif action == "TableAdd":
             await state.set_state(DevStates.waiting_for_file)
             await callback.message.answer(
                 "Теперь **отправьте мне файл**."
@@ -43,7 +53,7 @@ async def callback_developer_menu(callback: types.CallbackQuery, state: FSMConte
         elif action == "AdminRemove":
             await state.set_state(DevStates.waiting_for_admin_id_to_remove)
             await callback.message.answer(
-                "Теперь **введите ID пользователя**у кого надо забрать админ права."
+                "Теперь **введите ID пользователя** у кого надо забрать админ права."
                 "\nИли введите `/cancel`, чтобы отменить загрузку.",
                 reply_markup=types.ReplyKeyboardRemove(),
                 parse_mode="Markdown",
@@ -53,22 +63,40 @@ async def callback_developer_menu(callback: types.CallbackQuery, state: FSMConte
             await callback.message.edit_text(
                 "🏠 Главное меню:", reply_markup=get_main_menu_keyboard(is_dev)
             )
+            await callback.answer()
             return
 
-        if action not in ["upload_file", "close"]:
-            await callback.message.edit_reply_markup(
-                reply_markup=get_developer_menu_keyboard()
-            )
+        # Если действие не распознано (не 'dev' и не одно из внутренних действий)
+        else:
+            await callback.answer("Действие не распознано.")
+            return
+
+        await callback.message.edit_text(
+            callback.message.text,
+            reply_markup=None,
+        )
+        await callback.answer()
+
     except Exception as e:
         if "message is not modified" not in str(e):
             print(f"Other error: {e}")
     finally:
-        await callback.answer()
+        await callback.answer()  # Всплывающее уведомление, если не было другого ответа
 
 
 @router.message(DevStates.waiting_for_file, F.document)
 async def process_file_upload(message: types.Message, state: FSMContext, bot: Bot):
+    # 3. Обработчик FSM: Удаляем сообщение пользователя и предыдущий запрос
+    try:
+        await bot.delete_message(
+            chat_id=message.chat.id, message_id=message.message_id - 1
+        )
+        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
+    except Exception:
+        pass
+
     if message.document.file_size > 20 * 1024 * 1024:
+        # 4. Сообщение об ошибке остается сообщением, т.к. это обработчик message
         await message.answer("Файл слишком большой. Отправьте файл меньше 20 МБ.")
         return
     file_id = message.document.file_id
@@ -77,29 +105,38 @@ async def process_file_upload(message: types.Message, state: FSMContext, bot: Bo
     file_path = file_info.file_path
     local_file_name = DOWNLOAD_DIR + file_name
     await bot.download_file(file_path, destination=local_file_name)
-    await message.answer(
-        f"✅ Файл **{file_name}** ({file_id}) успешно получен.\n"
-        "Запускаю внутреннюю обработку...",
-        parse_mode="Markdown",
-    )
     # 3.1 Обработка файла
     run(local_file_name)
     await state.clear()
     is_dev = message.from_user.id in DEVELOPER_IDS
+
+    # 5. Возвращение в Главное меню после обработки
     await message.answer(
-        "Файл обработан. Выберите следующее действие:",
+        "✅ Файл обработан. Главное меню:",
         reply_markup=get_main_menu_keyboard(is_dev),
     )
 
 
 @router.message(DevStates.waiting_for_admin_id, F.text)
-async def process_admin_id_input(message: types.Message, state: FSMContext):
+async def process_admin_id_input(message: types.Message, state: FSMContext, bot: Bot):
     user_input = message.text.strip()
+    user_id = message.from_user.id
+
+    # Удаление сообщения-запроса и сообщения-ответа пользователя
+    try:
+        await bot.delete_message(
+            chat_id=message.chat.id, message_id=message.message_id - 1
+        )
+        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
+    except Exception:
+        pass
+
     if user_input.lower() == "/cancel":
         await state.clear()
-        is_dev = message.from_user.id in DEVELOPER_IDS
+        is_dev = user_id in DEVELOPER_IDS
+        # 6. Возвращение в Главное меню после отмены
         await message.answer(
-            "Добавление администратора отменено.",
+            "Добавление администратора отменено. Главное меню:",
             reply_markup=get_main_menu_keyboard(is_dev),
         )
         return
@@ -119,21 +156,38 @@ async def process_admin_id_input(message: types.Message, state: FSMContext):
     else:
         UPDATE_DEVELOPER_IDS_PERMANENTLY(new_admin_id, DEVELOPER_IDS)
         response_text = f"✅ Пользователь с ID **{new_admin_id}** успешно добавлен в список администраторов (временно)."
+
     await state.clear()
-    is_dev = message.from_user.id in DEVELOPER_IDS
-    await message.answer(response_text, parse_mode="Markdown")
+    is_dev = user_id in DEVELOPER_IDS
+
+    # 7. Возвращение в Главное меню
     await message.answer(
-        "Выберите следующее действие:", reply_markup=get_main_menu_keyboard(is_dev)
+        response_text + "\nВыберите следующее действие:", parse_mode="Markdown"
+    )
+    await message.answer(
+        "🏠 Главное меню:", reply_markup=get_main_menu_keyboard(is_dev)
     )
 
 
 @router.message(DevStates.waiting_for_file)
-async def process_file_upload_invalid(message: types.Message, state: FSMContext):
+async def process_file_upload_invalid(
+    message: types.Message, state: FSMContext, bot: Bot
+):
+    try:
+        await bot.delete_message(
+            chat_id=message.chat.id, message_id=message.message_id - 1
+        )
+        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
+    except Exception:
+        pass
+
     if message.text == "/cancel":
         await state.clear()
         is_dev = message.from_user.id in DEVELOPER_IDS
+        # 8. Возвращение в Главное меню после отмены
         await message.answer(
-            "Загрузка отменена.", reply_markup=get_main_menu_keyboard(is_dev)
+            "Загрузка отменена. Главное меню:",
+            reply_markup=get_main_menu_keyboard(is_dev),
         )
         return
     await message.answer("Пожалуйста, отправьте именно **документ** (файл).")
