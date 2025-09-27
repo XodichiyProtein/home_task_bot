@@ -1,6 +1,9 @@
 from typing import Dict, List
 from dotenv import load_dotenv, find_dotenv
 import os
+import logging
+import sys
+
 
 load_dotenv(find_dotenv())
 
@@ -13,13 +16,13 @@ except ValueError:
     DEVELOPER_IDS: List[int] = []
 
 CLASS_CONFIG: Dict[int, List[str]] = {
-    5: ["А", "Б"],
-    6: ["А", "Б"],
-    7: ["А", "Б", "В"],
-    8: ["А", "Б", "В"],
-    9: ["А", "Б", "В"],
-    10: ["А", "Б"],
-    11: ["А", "Б"],
+    5: ["а", "б"],
+    6: ["а", "б"],
+    7: ["а", "б", "в"],
+    8: ["а", "б", "в"],
+    9: ["а", "б", "в"],
+    10: ["а", "б"],
+    11: ["а", "б"],
 }
 
 # --- НОВЫЕ КОНСТАНТЫ ---
@@ -31,17 +34,13 @@ MENU_PREFIX = "menu_"
 DEV_PREFIX = "dev_"
 EDIT_HOMEWORK_PREFIX = "edit_hw_"
 
-import logging
-import sys
 
-# --- 1. Форматы ---
 # Кастомный формат для логов активности пользователя
 CUSTOM_LOG_FORMAT = "%(asctime)s - [%(levelname)s] - UserID:%(user_id)s - Action:%(action)s - Handler:%(handler)s - %(message)s"
 # Стандартный формат для системных логов (aiogram, asyncio и т.д.)
 STANDARD_LOG_FORMAT = "%(asctime)s - [%(levelname)s] - %(name)s - %(message)s"
 
 
-# --- 2. Кастомный Адаптер Логгера ---
 class CustomLoggerAdapter(logging.LoggerAdapter):
     """
     Адаптер, который безопасно добавляет поля 'user_id', 'action', 'handler' к лог-записи,
@@ -51,7 +50,6 @@ class CustomLoggerAdapter(logging.LoggerAdapter):
     def process(self, msg, kwargs):
         extra = kwargs.setdefault("extra", {})
 
-        # Безопасно получаем значения, подставляя 'N/A' при отсутствии
         extra.update(
             {
                 "user_id": extra.get("user_id", "N/A"),
@@ -63,7 +61,6 @@ class CustomLoggerAdapter(logging.LoggerAdapter):
         return msg, kwargs
 
 
-# --- 3. Функция настройки логирования ---
 def setup_logging():
     """
     Централизованная функция настройки логирования.
@@ -73,13 +70,10 @@ def setup_logging():
     standard_formatter = logging.Formatter(STANDARD_LOG_FORMAT)
     custom_formatter = logging.Formatter(CUSTOM_LOG_FORMAT)
 
-    # 3.1. Настройка корневого логгера (для aiogram/системных логов)
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.INFO)
-    # Очищаем обработчики, чтобы избежать дублирования
     root_logger.handlers.clear()
 
-    # Обработчик для системных логов в файл 'system_bot.log'
     system_file_handler = logging.FileHandler(
         "system_bot.log", mode="a", encoding="utf-8"
     )
@@ -87,18 +81,15 @@ def setup_logging():
     system_file_handler.setLevel(logging.INFO)
     root_logger.addHandler(system_file_handler)
 
-    # Консольный обработчик для системных логов
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setFormatter(standard_formatter)
     root_logger.addHandler(console_handler)
 
-    # 3.2. Настройка кастомного логгера (для активности пользователя)
     bot_base_logger = logging.getLogger("bot_logger")
     bot_base_logger.setLevel(logging.INFO)
     # Ключевой шаг: Отключаем распространение логов в root_logger
     bot_base_logger.propagate = False
 
-    # Обработчик для файла 'user_activity.log' с кастомным форматом
     custom_file_handler = logging.FileHandler(
         "user_activity.log", mode="a", encoding="utf-8"
     )
@@ -107,9 +98,7 @@ def setup_logging():
     bot_base_logger.handlers.clear()
     bot_base_logger.addHandler(custom_file_handler)
 
-    # 4. Возвращаем адаптированный логгер для использования в коде
     return CustomLoggerAdapter(bot_base_logger, {})
 
 
-# Глобальный объект для импорта: запустит настройку при импорте
 bot_logger = setup_logging()

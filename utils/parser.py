@@ -76,14 +76,11 @@ def _create_class_dataframe(
 ) -> pd.DataFrame:
     """Создает DataFrame для отдельного класса."""
     try:
-        # Исправляем индексацию согласно структуре таблицы
-        # Классы начинаются с колонки D (индекс 3)
         class_col_index = 3 + class_index
 
         lessons_data = []
 
-        # Проходим по строкам с уроками (строки 4-17, индексы 3-16)
-        for row_idx in range(3, 17):
+        for row_idx in range(3, len(df)):
             # Проверяем, что строка содержит урок (есть номер урока и время)
             if (
                 pd.notna(df.iloc[row_idx, 1])  # номер урока (колонка B)
@@ -99,6 +96,7 @@ def _create_class_dataframe(
 
                 # Кабинет из следующей строки
                 classroom = ""
+                # Проверяем, что следующая строка существует в DataFrame
                 if row_idx + 1 < len(df):
                     classroom_cell = df.iloc[row_idx + 1, class_col_index]
                     if pd.notna(classroom_cell):
