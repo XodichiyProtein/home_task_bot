@@ -1,7 +1,13 @@
-from states.dev_states import EditHomeworkStates
+from states.dev_states import EditHomeworkStates, AnnouncementStates
 
 from aiogram import types, Router, F, Bot
 from aiogram.fsm.context import FSMContext
+from aiogram.types import BufferedInputFile
+
+import aiogram
+
+from aiogram.fsm.context import FSMContext
+from aiogram.fsm.state import State, StatesGroup 
 from aiogram.types import BufferedInputFile
 
 from config import (
@@ -18,17 +24,21 @@ from keyboards.keyboards import (
     get_letter_keyboard,
     get_main_menu_keyboard,
     get_developer_menu_keyboard,
+    announcements_menu_kb,
+    announcement_detail_kb,
+    get_next_announcement_id,
+    save_announcements,
+    get_edit_homework_keyboard,
     BACK_PREFIX,
+    ANN_PREFIX,
+    ANNOUNCEMENTS_DATA,
 )
 
 from utils.parser import create_schedule_image, get_lesson_numbers, edit_homework
 
-from keyboards.keyboards import get_edit_homework_keyboard
-
 from datetime import datetime, timedelta
 
 router = Router()
-
 
 @router.message(F.text == "/start")
 async def cmd_start(message: types.Message):
@@ -267,5 +277,283 @@ async def callback_back_action(callback: types.CallbackQuery):
         await callback.message.answer(
             "🏠 Главное меню:", reply_markup=get_main_menu_keyboard(is_dev)
         )
+    elif action == "ann-menu": # Новый колбэк для возврата из детального объявления
+        ann_keyboard = announcements_menu_kb() 
+        await callback.message.delete()
+        await callback.message.answer(
+            "📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
+            reply_markup=ann_keyboard, 
+            parse_mode="Markdown"
+        )
     else:
         await callback.answer("Действие не распознано.")
+
+
+
+# --- ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ---
+def is_developer(user_id: int) -> bool:
+    """Проверяет, является ли пользователь разработчиком."""
+    # Используем вашу существующую константу
+    return user_id in DEVELOPER_IDS 
+
+
+# 2. Обработка всех колбэков, связанных с объявлениями (view, delete, create_start)
+@router.callback_query(F.data.startswith(ANN_PREFIX))
+async def handle_announcement_callbacks(call: types.CallbackQuery, state: FSMContext):
+    user_id = call.from_user.id
+    
+    # 1. Получаем часть данных после префикса (например, 'view:123' или 'create_start')
+    # Использование среза строки безопаснее, чем split('_')
+    data_suffix = call.data[len(ANN_PREFIX):] 
+    
+    # 2. Разделяем на действие и ID (разделяем только один раз)
+    parts = data_suffix.split(':', 1)
+    action = parts[0] # 'view', 'delete', 'create_start', 'no_ann'
+    
+    await call.answer()
+    
+    if action == "view":
+        # Проверяем, что ID присутствует (т.е. parts имеет 2 элемента)
+        if len(parts) == 2:
+            announcement_id = int(parts[1])
+            await view_announcement_detail(call, announcement_id)
+        else:
+            await call.answer("❌ Ошибка: Неверный формат объявления (отсутствует ID).", show_alert=True)
+    
+    if action == 'ViewMenu':
+        await call.message.edit_text(
+            "📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
+            reply_markup=announcements_menu_kb(), 
+            parse_mode="Markdown"
+        )
+        return
+    
+    elif action == "delete":
+        if is_developer(user_id):
+            if len(parts) == 2:
+                announcement_id = int(parts[1])
+                await delete_announcement(call, announcement_id)
+            else:
+                await call.answer("❌ Ошибка: Неверный формат ID для удаления.", show_alert=True)
+        else:
+            await call.answer("⛔️ Недостаточно прав.", show_alert=True)
+            
+    elif action == "CreateStart":
+        if is_developer(user_id):
+            await start_create_announcement(call, state)
+        else:
+            await call.answer("⛔️ Недостаточно прав.", show_alert=True)
+            
+    elif action == "no_ann":
+        # Обрабатываем нажатие на кнопку "Нет актуальных объявлений"
+        await call.answer("Нет актуальных объявлений.", show_alert=True)
+        
+
+# 4. Обработка контента (Файл + Текст)
+@router.message(AnnouncementStates.waiting_for_announcement_content, F.text.lower() == "/cancel")
+async def cancel_announcement_creation(message: types.Message, state: FSMContext):
+    """Отмена создания объявления."""
+    await state.clear()
+    await message.answer("❌ Создание объявления отменено.")
+
+# 5. Показать детальное объявление (файл + текст)
+async def view_announcement_detail(call: types.CallbackQuery, announcement_id: int):
+    """Показывает детальное объявление (файл + текст)."""
+    announcement = next((a for a in ANNOUNCEMENTS_DATA if a['id'] == announcement_id), None)
+    
+    if not announcement:
+        await call.answer("❌ Объявление не найдено. Обновляю меню.", show_alert=True)
+        # Удаляем текущее сообщение
+        await call.message.delete() 
+        
+        # Отправляем новое сообщение с меню объявлений
+        await call.bot.send_message(
+            chat_id=call.message.chat.id, 
+            text="📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
+            reply_markup=announcements_menu_kb(),
+            parse_mode="Markdown"
+        )
+        return
+
+    dev_status = is_developer(call.from_user.id)
+    kb = announcement_detail_kb(announcement_id, is_developer=dev_status)
+    
+    title = announcement.get('title', f"Объявление #{announcement_id}")
+    caption = f"📣 **{title}**\n\n{announcement['text']}"
+    
+
+    # Удаляем предыдущее сообщение
+    await call.message.delete()
+    
+    # --- ЛОГИКА ОТПРАВКИ КОНТЕНТА (ДОБАВЛЕНО ВИДЕО) ---
+    if announcement['file_id']:
+        if announcement['file_type'] == 'photo':
+            await call.bot.send_photo(
+                chat_id=call.message.chat.id, 
+                photo=announcement['file_id'], 
+                caption=caption, 
+                reply_markup=kb, 
+                parse_mode="Markdown"
+            )
+        elif announcement['file_type'] == 'video': # <-- НОВЫЙ ТИП: ВИДЕО
+            await call.bot.send_video(
+                chat_id=call.message.chat.id, 
+                video=announcement['file_id'], 
+                caption=caption, 
+                reply_markup=kb,
+                parse_mode="Markdown"
+            )
+        elif announcement['file_type'] == 'document':
+            await call.bot.send_document(
+                chat_id=call.message.chat.id, 
+                document=announcement['file_id'], 
+                caption=caption, 
+                reply_markup=kb, 
+                parse_mode="Markdown"
+            )
+    else:
+        # Если нет файла, просто отправляем текст
+        await call.message.bot.send_message(
+            chat_id=call.message.chat.id, 
+            text=caption, 
+            reply_markup=kb, 
+            parse_mode="Markdown"
+        )
+
+
+# 6. Удаление объявления
+async def delete_announcement(call: types.CallbackQuery, announcement_id: int):
+    """Удаляет объявление."""
+    global ANNOUNCEMENTS_DATA
+    
+    original_len = len(ANNOUNCEMENTS_DATA)
+    # Имитируем удаление
+    ANNOUNCEMENTS_DATA = [a for a in ANNOUNCEMENTS_DATA if a['id'] != announcement_id]
+    
+    # Ответ пользователю
+    if len(ANNOUNCEMENTS_DATA) < original_len:
+        save_announcements() # Сохраняем файл после удаления
+        
+        # Получаем новое меню объявлений
+        new_kb = announcements_menu_kb()
+        new_text = f"🗑️ Объявление #{announcement_id} успешно удалено."
+
+        try:
+            # Пытаемся изменить сообщение на меню объявлений
+            await call.message.edit_text(
+                text=new_text, 
+                reply_markup=new_kb
+            )
+        except aiogram.exceptions.TelegramBadRequest as e:
+            # Если возникла ошибка "message is not modified", просто отвечаем на колбэк
+            if "message is not modified" in str(e):
+                await call.answer(new_text.replace('**', ''), show_alert=True)
+                # Удаляем старое сообщение (с деталями удаленного объявления)
+                await call.message.delete()
+                # И отправляем новое (чтобы обновить клавиатуру главного меню объявлений)
+                await call.bot.send_message(
+                    chat_id=call.message.chat.id,
+                    text="📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
+                    reply_markup=new_kb, 
+                    parse_mode="Markdown"
+                )
+            else:
+                # Если это другая ошибка Telegram, пробрасываем ее
+                raise
+            
+    else:
+        # Если объявление не найдено
+        await call.answer(f"❌ Объявление #{announcement_id} не найдено для удаления.", show_alert=True)
+
+@router.message(
+    AnnouncementStates.waiting_for_announcement_content, 
+    F.photo | F.document | F.video | F.text | F.caption # <-- ДОБАВЛЕНО F.video
+)
+async def process_announcement_content(message: types.Message, state: FSMContext):
+    """Обрабатывает сообщение от разработчика, содержащее файл и/или текст."""
+    user_data = await state.get_data()
+    announcement_id = user_data.get('announcement_id')
+    title = user_data.get('title', f"Объявление #{announcement_id}") # <-- ПОЛУЧАЕМ НАЗВАНИЕ
+    
+    
+    text = message.caption or message.text
+    file_id = None
+    file_type = None
+
+    # --- ЛОГИКА ОПРЕДЕЛЕНИЯ ТИПА ФАЙЛА ---
+    if message.photo:
+        # Берем фото лучшего качества
+        file_id = message.photo[-1].file_id
+        file_type = 'photo'
+    elif message.video:
+        # Новый тип: Видео
+        file_id = message.video.file_id
+        file_type = 'video'
+    elif message.document:
+        # Документ (если это не фото/видео)
+        file_id = message.document.file_id
+        file_type = 'document'
+    # ------------------------------------
+    
+    if not text and not file_id:
+        await message.reply("⚠️ Объявление должно содержать хотя бы текст или файл с подписью. Попробуйте снова или введите `/cancel`.")
+        return
+
+    # Сохранение объявления
+    ANNOUNCEMENTS_DATA.append({
+        'id': announcement_id,
+        'title': title, # <-- СОХРАНЯЕМ НАЗВАНИЕ
+        'text': text if text else "Объявление без текста.",
+        'file_id': file_id,
+        'file_type': file_type,
+    })
+
+    save_announcements()
+    await state.clear()
+    
+    is_dev = message.from_user.id in DEVELOPER_IDS
+    await message.answer(
+        f"✅ **Объявление #{announcement_id} успешно создано!**", 
+        reply_markup=get_main_menu_keyboard(is_dev), 
+        parse_mode="Markdown"
+    )
+async def start_create_announcement(call: types.CallbackQuery, state: FSMContext):
+    """Начинает процесс создания объявления, устанавливая FSM-состояние."""
+    
+    # Сохраняем ID нового объявления и переходим к ожиданию ЗАГОЛОВКА
+    new_ann_id = get_next_announcement_id()
+    await state.set_state(AnnouncementStates.waiting_for_announcement_title) # <-- ПЕРЕХОД К ЗАГОЛОВКУ
+    await state.update_data(announcement_id=new_ann_id)
+    
+    await call.message.edit_text(
+        f"📝 **Создание объявления #{new_ann_id}**\n\n"
+        "**Введите название (заголовок)** объявления. \n\n"
+        "Для отмены введите `/cancel`.", 
+        parse_mode="Markdown"
+    )
+    await call.answer()
+
+@router.message(AnnouncementStates.waiting_for_announcement_title, F.text)
+async def process_announcement_title(message: types.Message, state: FSMContext):
+    """Обрабатывает введенный заголовок и переводит в состояние ожидания контента."""
+    user_id = message.from_user.id
+    
+    if message.text.lower() == "/cancel":
+        await state.clear()
+        is_dev = user_id in DEVELOPER_IDS
+        await message.answer("❌ Создание объявления отменено.", reply_markup=get_main_menu_keyboard(is_dev))
+        return
+
+    title = message.text.strip()
+    
+    await state.update_data(title=title)
+    await state.set_state(AnnouncementStates.waiting_for_announcement_content)
+
+    # Просим контент
+    await message.answer(
+        "📝 **Название сохранено.**\n\n"
+        "Теперь отправьте **файл** (фото/видео/документ) и **текст** объявления в одном сообщении. \n"
+        "Текст (подпись) станет основным содержанием объявления. \n\n"
+        "Для отмены введите `/cancel`.",
+        parse_mode="Markdown"
+    )

@@ -3,6 +3,9 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from typing import List, Dict
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+import os
+import json
 
 # Префиксы для CallbackData
 CLASS_PREFIX = "select_class_"
@@ -11,7 +14,93 @@ MENU_PREFIX = "menu_"
 DEV_PREFIX = "dev_"
 EDIT_HOMEWORK_PREFIX = "edit_hw_"
 BACK_PREFIX = "back_"
+ANN_PREFIX = "ann_" 
 
+ANNOUNCEMENTS_DATA = [] 
+NEXT_ANNOUNCEMENT_ID = 1 
+ANNOUNCEMENTS_FILE = 'announcements.json'
+
+def load_announcements():
+    """Загружает объявления из локального JSON-файла."""
+    global ANNOUNCEMENTS_DATA, NEXT_ANNOUNCEMENT_ID
+    if os.path.exists(ANNOUNCEMENTS_FILE):
+        try:
+            with open(ANNOUNCEMENTS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                ANNOUNCEMENTS_DATA = data.get('announcements', [])
+                # Устанавливаем NEXT_ANNOUNCEMENT_ID
+                if ANNOUNCEMENTS_DATA:
+                    max_id = max(ann['id'] for ann in ANNOUNCEMENTS_DATA)
+                    NEXT_ANNOUNCEMENT_ID = max_id + 1
+                else:
+                    NEXT_ANNOUNCEMENT_ID = 1
+        except (json.JSONDecodeError, FileNotFoundError):
+            # Если файл пуст или поврежден, начинаем с чистого листа
+            ANNOUNCEMENTS_DATA = []
+            NEXT_ANNOUNCEMENT_ID = 1
+    else:
+        ANNOUNCEMENTS_DATA = []
+        NEXT_ANNOUNCEMENT_ID = 1
+
+def save_announcements():
+    """Сохраняет объявления в локальный JSON-файл."""
+    data = {'announcements': ANNOUNCEMENTS_DATA}
+    with open(ANNOUNCEMENTS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+
+def get_next_announcement_id() -> int:
+    """Получает следующий ID для нового объявления (имитация DB)."""
+    global NEXT_ANNOUNCEMENT_ID
+    current_id = NEXT_ANNOUNCEMENT_ID
+    NEXT_ANNOUNCEMENT_ID += 1
+    return current_id
+
+def announcements_menu_kb() -> types.InlineKeyboardMarkup:
+    """
+    Создает клавиатуру для меню объявлений с динамическим списком.
+    """
+    builder = InlineKeyboardBuilder()
+    
+    if not ANNOUNCEMENTS_DATA:
+        builder.button(text="Нет актуальных объявлений 😔", callback_data=f"{ANN_PREFIX}no_ann")
+    else:
+        # Создаем кнопки для всех объявлений, используя title
+        for ann in ANNOUNCEMENTS_DATA:
+            # Получаем title. Используем ID как запасной вариант, если title почему-то отсутствует.
+            title = ann.get('title', f"Объявление #{ann['id']}") 
+            
+            builder.button(
+                # Отображаем название объявления
+                text=f"📢 {title}", 
+                callback_data=f"{ANN_PREFIX}view:{ann['id']}"
+            )
+
+    builder.adjust(1) # Кнопки объявлений в один ряд
+    builder.row(types.InlineKeyboardButton(text="⬅️ Назад", callback_data=f"{BACK_PREFIX}main-menu"))
+    return builder.as_markup()
+
+
+def announcement_detail_kb(announcement_id: int, is_developer: bool = False) -> types.InlineKeyboardMarkup:
+    """
+    Создает клавиатуру для детального просмотра объявления, 
+    включая кнопку удаления для разработчиков.
+    """
+    builder = InlineKeyboardBuilder()
+    
+    # Кнопка для разработчиков: "Удалить объявление"
+    if is_developer:
+        builder.button(
+            text="🗑️ Удалить объявление", 
+            callback_data=f"{ANN_PREFIX}delete:{announcement_id}"
+        )
+        
+    builder.button(
+        text="⬅️ Назад", 
+        callback_data=f"{BACK_PREFIX}ann-menu"
+    )
+    builder.adjust(1)
+    return builder.as_markup()
 
 def get_edit_homework_keyboard(
     lesson_numbers: list, date_str: str
@@ -96,7 +185,7 @@ def get_main_menu_keyboard(
     callback_format = "%Y-%m-%d"  # Формат для передачи в callback
 
     # Кнопки первого ряда
-    # builder.button(text="📚 Объявление", callback_data=f"{MENU_PREFIX}announcement")
+    builder.button(text="📚 Объявление", callback_data=f"{ANN_PREFIX}ViewMenu")
     # builder.button(text="😎 В разработке", callback_data=f"{MENU_PREFIX}test")
     # builder.button(text="☎️ Связь", callback_data=f"{MENU_PREFIX}connection")
 
@@ -125,7 +214,7 @@ def get_main_menu_keyboard(
     if is_developer:
         builder.button(text="💻 Меню Разработчика", callback_data=f"{DEV_PREFIX}dev")
         # builder.adjust(3, 5, 1)
-        builder.adjust(5, 1)
+        builder.adjust(1, 5, 1)
     else:
         builder.adjust(5)
 
@@ -137,9 +226,11 @@ def get_developer_menu_keyboard() -> types.InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
 
     builder.button(text="🔄 Добавить таблицу", callback_data=f"{DEV_PREFIX}TableAdd")
+    builder.button(text="➕ Создать объявление", callback_data=f"{ANN_PREFIX}CreateStart")
     builder.button(text="👥 Добавить админа", callback_data=f"{DEV_PREFIX}AdminAdd")
     builder.button(text="👥 Удалить админа", callback_data=f"{DEV_PREFIX}AdminRemove")
     builder.button(text="❌ Закрыть меню", callback_data=f"{DEV_PREFIX}close")
 
-    builder.adjust(3, 1)
+    builder.adjust(2, 2, 1)
     return builder.as_markup()
+load_announcements()

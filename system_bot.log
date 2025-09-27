@@ -1197,3 +1197,1350 @@ TypeError: strptime() argument 1 must be str, not datetime.datetime
 2025-09-27 17:59:48,305 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 2025-09-27 17:59:48,306 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
 2025-09-27 17:59:48,568 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:26:28,474 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:26:28,891 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:26:31,988 - [INFO] - aiogram.event - Update id=311887911 is handled. Duration 516 ms by bot id=7610043618
+2025-09-27 18:26:34,180 - [INFO] - aiogram.event - Update id=311887912 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 18:27:16,138 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:27:16,139 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:27:16,140 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:27:16,405 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:27:20,040 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:27:20,349 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:27:22,924 - [INFO] - aiogram.event - Update id=311887913 is handled. Duration 610 ms by bot id=7610043618
+2025-09-27 18:27:23,783 - [INFO] - aiogram.event - Update id=311887914 is handled. Duration 421 ms by bot id=7610043618
+2025-09-27 18:27:24,436 - [INFO] - aiogram.event - Update id=311887915 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 18:27:26,352 - [INFO] - aiogram.event - Update id=311887916 is handled. Duration 203 ms by bot id=7610043618
+2025-09-27 18:31:06,634 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:31:06,635 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:31:06,635 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:31:06,892 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:31:10,971 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:31:11,274 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:31:12,872 - [INFO] - aiogram.event - Update id=311887917 is handled. Duration 313 ms by bot id=7610043618
+2025-09-27 18:31:17,809 - [INFO] - aiogram.event - Update id=311887918 is handled. Duration 1139 ms by bot id=7610043618
+2025-09-27 18:31:18,973 - [INFO] - aiogram.event - Update id=311887919 is handled. Duration 405 ms by bot id=7610043618
+2025-09-27 18:31:20,575 - [INFO] - aiogram.event - Update id=311887920 is handled. Duration 110 ms by bot id=7610043618
+2025-09-27 18:31:23,623 - [INFO] - aiogram.event - Update id=311887921 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 18:31:25,721 - [INFO] - aiogram.event - Update id=311887922 is handled. Duration 139 ms by bot id=7610043618
+2025-09-27 18:37:40,213 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:37:40,214 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:37:40,224 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:37:40,487 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:37:44,038 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:37:44,339 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:37:49,776 - [INFO] - aiogram.event - Update id=311887923 is handled. Duration 765 ms by bot id=7610043618
+2025-09-27 18:37:51,457 - [INFO] - aiogram.event - Update id=311887924 is handled. Duration 843 ms by bot id=7610043618
+2025-09-27 18:37:52,243 - [INFO] - aiogram.event - Update id=311887925 is handled. Duration 813 ms by bot id=7610043618
+2025-09-27 18:44:37,805 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:44:37,807 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:44:37,807 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:44:38,069 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:45:51,382 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:45:51,832 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:45:55,229 - [INFO] - aiogram.event - Update id=311887926 is handled. Duration 312 ms by bot id=7610043618
+2025-09-27 18:45:57,589 - [INFO] - aiogram.event - Update id=311887927 is handled. Duration 467 ms by bot id=7610043618
+2025-09-27 18:45:58,943 - [INFO] - aiogram.event - Update id=311887928 is handled. Duration 234 ms by bot id=7610043618
+2025-09-27 18:46:02,856 - [INFO] - aiogram.event - Update id=311887929 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-27 18:46:06,100 - [INFO] - aiogram.event - Update id=311887930 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 18:46:07,033 - [INFO] - aiogram.event - Update id=311887931 is handled. Duration 109 ms by bot id=7610043618
+2025-09-27 18:47:02,527 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:47:02,528 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:47:02,529 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:47:02,785 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:47:06,534 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:47:06,853 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:47:08,378 - [INFO] - aiogram.event - Update id=311887932 is handled. Duration 313 ms by bot id=7610043618
+2025-09-27 18:47:10,369 - [INFO] - aiogram.event - Update id=311887933 is handled. Duration 390 ms by bot id=7610043618
+2025-09-27 18:47:11,268 - [INFO] - aiogram.event - Update id=311887934 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 18:47:12,095 - [INFO] - aiogram.event - Update id=311887935 is handled. Duration 342 ms by bot id=7610043618
+2025-09-27 18:47:12,938 - [INFO] - aiogram.event - Update id=311887936 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 18:47:13,422 - [INFO] - aiogram.event - Update id=311887937 is not handled. Duration 125 ms by bot id=7610043618
+2025-09-27 18:47:13,423 - [ERROR] - aiogram.event - Cause exception while process update id=311887937 by bot id=7610043618
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 318, in handle_announcement_callbacks
+    announcement_id = int(parts[1])
+                          ~~~~~^^^
+IndexError: list index out of range
+2025-09-27 18:48:45,230 - [INFO] - aiogram.event - Update id=311887938 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 18:48:45,928 - [INFO] - aiogram.event - Update id=311887939 is handled. Duration 94 ms by bot id=7610043618
+2025-09-27 18:50:12,472 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:50:12,473 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:50:12,473 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:50:12,733 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:50:16,058 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:50:16,622 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:50:18,813 - [INFO] - aiogram.event - Update id=311887940 is handled. Duration 359 ms by bot id=7610043618
+2025-09-27 18:50:21,085 - [INFO] - aiogram.event - Update id=311887941 is handled. Duration 108 ms by bot id=7610043618
+2025-09-27 18:50:38,636 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:50:38,637 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:50:38,637 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:50:38,897 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:50:43,514 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:50:43,857 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:50:47,902 - [INFO] - aiogram.event - Update id=311887942 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 18:51:17,270 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:51:17,271 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:51:17,271 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:51:17,528 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:51:21,120 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:51:21,446 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:51:21,841 - [INFO] - aiogram.event - Update id=311887943 is handled. Duration 295 ms by bot id=7610043618
+2025-09-27 18:51:25,751 - [INFO] - aiogram.event - Update id=311887944 is handled. Duration 110 ms by bot id=7610043618
+2025-09-27 18:51:38,057 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:51:38,057 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:51:38,057 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:51:38,315 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:51:41,751 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:51:42,067 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:51:45,929 - [INFO] - aiogram.event - Update id=311887945 is handled. Duration 311 ms by bot id=7610043618
+2025-09-27 18:52:01,360 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:52:01,361 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:52:01,362 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:52:01,623 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:52:05,040 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:52:05,366 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:52:05,771 - [INFO] - aiogram.event - Update id=311887946 is handled. Duration 297 ms by bot id=7610043618
+2025-09-27 18:53:24,054 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:53:24,055 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:53:24,055 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:53:24,310 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:53:27,963 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:53:28,284 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:53:28,775 - [INFO] - aiogram.event - Update id=311887947 is handled. Duration 390 ms by bot id=7610043618
+2025-09-27 18:53:54,677 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:53:54,678 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:53:54,678 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:53:54,936 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:53:58,510 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:53:58,826 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:53:59,235 - [INFO] - aiogram.event - Update id=311887948 is handled. Duration 312 ms by bot id=7610043618
+2025-09-27 18:55:53,194 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:55:53,195 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:55:53,195 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:55:53,450 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:55:57,003 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:55:57,440 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:55:58,111 - [INFO] - aiogram.event - Update id=311887949 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 18:56:14,295 - [INFO] - aiogram.event - Update id=311887950 is handled. Duration 360 ms by bot id=7610043618
+2025-09-27 18:56:15,427 - [INFO] - aiogram.event - Update id=311887951 is not handled. Duration 94 ms by bot id=7610043618
+2025-09-27 18:56:15,428 - [ERROR] - aiogram.event - Cause exception while process update id=311887951 by bot id=7610043618
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 321, in handle_announcement_callbacks
+    announcement_id = int(parts[1])
+                          ~~~~~^^^
+IndexError: list index out of range
+2025-09-27 18:56:17,803 - [INFO] - aiogram.event - Update id=311887952 is handled. Duration 515 ms by bot id=7610043618
+2025-09-27 18:56:18,637 - [INFO] - aiogram.event - Update id=311887953 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-27 18:58:00,013 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 18:58:00,015 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 18:58:00,015 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 18:58:00,276 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:58:05,665 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 18:58:05,968 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 18:58:10,030 - [INFO] - aiogram.event - Update id=311887954 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-27 18:58:15,291 - [INFO] - aiogram.event - Update id=311887955 is handled. Duration 546 ms by bot id=7610043618
+2025-09-27 18:58:16,420 - [INFO] - aiogram.event - Update id=311887956 is handled. Duration 329 ms by bot id=7610043618
+2025-09-27 18:58:17,497 - [INFO] - aiogram.event - Update id=311887957 is handled. Duration 250 ms by bot id=7610043618
+2025-09-27 18:58:24,616 - [INFO] - aiogram.event - Update id=311887958 is handled. Duration 172 ms by bot id=7610043618
+2025-09-27 18:58:26,778 - [INFO] - aiogram.event - Update id=311887959 is handled. Duration 890 ms by bot id=7610043618
+2025-09-27 18:58:28,082 - [INFO] - aiogram.event - Update id=311887960 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 18:58:29,341 - [INFO] - aiogram.event - Update id=311887961 is handled. Duration 217 ms by bot id=7610043618
+2025-09-27 18:58:31,547 - [INFO] - aiogram.event - Update id=311887962 is handled. Duration 312 ms by bot id=7610043618
+2025-09-27 18:59:42,118 - [INFO] - aiogram.event - Update id=311887963 is handled. Duration 282 ms by bot id=7610043618
+2025-09-27 19:00:03,301 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:00:03,302 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:00:03,302 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:00:03,561 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:00:07,373 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:00:07,853 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:03:31,747 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:03:31,747 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:03:31,748 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:03:32,011 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:03:35,584 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:03:36,002 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:03:36,523 - [INFO] - aiogram.event - Update id=311887964 is handled. Duration 438 ms by bot id=7610043618
+2025-09-27 19:03:50,693 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:03:50,694 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:03:50,694 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:03:50,949 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:03:55,398 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:03:55,702 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:03:58,247 - [INFO] - aiogram.event - Update id=311887965 is handled. Duration 438 ms by bot id=7610043618
+2025-09-27 19:05:53,144 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:05:53,145 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:05:53,145 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:05:53,404 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:06:17,725 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:06:18,186 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:06:19,262 - [INFO] - aiogram.event - Update id=311887966 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-27 19:06:19,266 - [ERROR] - aiogram.event - Cause exception while process update id=311887966 by bot id=7610043618
+TypeError: handle_announcement_callbacks() missing 1 required positional argument: 'message'
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+                 ^^^^^^^^^
+TypeError: handle_announcement_callbacks() missing 1 required positional argument: 'message'
+2025-09-27 19:09:28,642 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:09:28,643 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:09:28,643 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:09:28,825 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:09:32,311 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:09:32,614 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:09:36,488 - [INFO] - aiogram.event - Update id=311887967 is handled. Duration 437 ms by bot id=7610043618
+2025-09-27 19:09:39,513 - [INFO] - aiogram.event - Update id=311887968 is handled. Duration 389 ms by bot id=7610043618
+2025-09-27 19:09:40,238 - [INFO] - aiogram.event - Update id=311887969 is handled. Duration 437 ms by bot id=7610043618
+2025-09-27 19:09:40,823 - [INFO] - aiogram.event - Update id=311887970 is handled. Duration 235 ms by bot id=7610043618
+2025-09-27 19:09:44,806 - [INFO] - aiogram.event - Update id=311887971 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:09:51,300 - [INFO] - aiogram.event - Update id=311887972 is handled. Duration 390 ms by bot id=7610043618
+2025-09-27 19:09:52,135 - [INFO] - aiogram.event - Update id=311887973 is handled. Duration 250 ms by bot id=7610043618
+2025-09-27 19:10:12,834 - [INFO] - aiogram.event - Update id=311887974 is handled. Duration 110 ms by bot id=7610043618
+2025-09-27 19:10:14,550 - [INFO] - aiogram.event - Update id=311887975 is handled. Duration 360 ms by bot id=7610043618
+2025-09-27 19:10:16,165 - [INFO] - aiogram.event - Update id=311887976 is handled. Duration 360 ms by bot id=7610043618
+2025-09-27 19:10:21,805 - [INFO] - aiogram.event - Update id=311887977 is not handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:10:21,805 - [ERROR] - aiogram.event - Cause exception while process update id=311887977 by bot id=7610043618
+NameError: name 'show_announcements_menu' is not defined
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 281, in callback_back_action
+    await show_announcements_menu(callback.message)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'show_announcements_menu' is not defined
+2025-09-27 19:11:06,468 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:11:06,469 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:11:06,470 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:11:06,729 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:11:17,103 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:11:17,560 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:11:22,788 - [INFO] - aiogram.event - Update id=311887978 is handled. Duration 485 ms by bot id=7610043618
+2025-09-27 19:11:25,468 - [INFO] - aiogram.event - Update id=311887979 is handled. Duration 217 ms by bot id=7610043618
+2025-09-27 19:11:27,517 - [INFO] - aiogram.event - Update id=311887980 is handled. Duration 203 ms by bot id=7610043618
+2025-09-27 19:11:30,839 - [INFO] - aiogram.event - Update id=311887981 is handled. Duration 375 ms by bot id=7610043618
+2025-09-27 19:14:16,178 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:14:16,178 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:14:16,179 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:14:16,341 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:14:20,004 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:14:20,309 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:14:21,059 - [INFO] - aiogram.event - Update id=311887982 is handled. Duration 655 ms by bot id=7610043618
+2025-09-27 19:14:21,862 - [INFO] - aiogram.event - Update id=311887983 is handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:14:26,138 - [INFO] - aiogram.event - Update id=311887984 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 19:14:29,066 - [INFO] - aiogram.event - Update id=311887985 is handled. Duration 296 ms by bot id=7610043618
+2025-09-27 19:14:30,319 - [INFO] - aiogram.event - Update id=311887986 is not handled. Duration 264 ms by bot id=7610043618
+2025-09-27 19:14:30,319 - [ERROR] - aiogram.event - Cause exception while process update id=311887986 by bot id=7610043618
+TypeError: Bot.send_video() got an unexpected keyword argument 'reply_mode'
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 317, in handle_announcement_callbacks
+    await view_announcement_detail(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 399, in view_announcement_detail
+    await call.bot.send_video(
+          ^^^^^^^^^^^^^^^^^^^^
+TypeError: Bot.send_video() got an unexpected keyword argument 'reply_mode'
+2025-09-27 19:15:10,502 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:15:10,504 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:15:10,504 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:15:10,765 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:15:14,034 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:15:14,335 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:15:23,084 - [INFO] - aiogram.event - Update id=311887987 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:15:24,211 - [INFO] - aiogram.event - Update id=311887988 is handled. Duration 233 ms by bot id=7610043618
+2025-09-27 19:15:26,466 - [INFO] - aiogram.event - Update id=311887989 is handled. Duration 358 ms by bot id=7610043618
+2025-09-27 19:15:28,315 - [INFO] - aiogram.event - Update id=311887990 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:15:29,220 - [INFO] - aiogram.event - Update id=311887991 is handled. Duration 233 ms by bot id=7610043618
+2025-09-27 19:15:32,496 - [INFO] - aiogram.event - Update id=311887992 is handled. Duration 157 ms by bot id=7610043618
+2025-09-27 19:15:33,977 - [INFO] - aiogram.event - Update id=311887993 is handled. Duration 297 ms by bot id=7610043618
+2025-09-27 19:15:35,251 - [INFO] - aiogram.event - Update id=311887994 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:15:38,638 - [INFO] - aiogram.event - Update id=311887995 is not handled. Duration 389 ms by bot id=7610043618
+2025-09-27 19:15:38,639 - [ERROR] - aiogram.event - Cause exception while process update id=311887995 by bot id=7610043618
+TypeError: object InlineKeyboardMarkup can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 281, in callback_back_action
+    await announcements_menu_kb()
+TypeError: object InlineKeyboardMarkup can't be used in 'await' expression
+2025-09-27 19:18:18,799 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:18:18,800 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:18:18,800 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:18:19,053 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:18:22,830 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:18:23,136 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:18:23,640 - [INFO] - aiogram.event - Update id=311887996 is handled. Duration 389 ms by bot id=7610043618
+2025-09-27 19:18:25,181 - [INFO] - aiogram.event - Update id=311887997 is handled. Duration 311 ms by bot id=7610043618
+2025-09-27 19:18:26,540 - [INFO] - aiogram.event - Update id=311887998 is handled. Duration 469 ms by bot id=7610043618
+2025-09-27 19:18:30,074 - [INFO] - aiogram.event - Update id=311887999 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:18:30,887 - [INFO] - aiogram.event - Update id=311888000 is handled. Duration 297 ms by bot id=7610043618
+2025-09-27 19:18:35,106 - [INFO] - aiogram.event - Update id=311888001 is handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:18:36,656 - [INFO] - aiogram.event - Update id=311888002 is handled. Duration 296 ms by bot id=7610043618
+2025-09-27 19:18:37,929 - [INFO] - aiogram.event - Update id=311888003 is handled. Duration 359 ms by bot id=7610043618
+2025-09-27 19:18:41,233 - [INFO] - aiogram.event - Update id=311888004 is not handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:18:41,233 - [ERROR] - aiogram.event - Cause exception while process update id=311888004 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 282, in callback_back_action
+    await callback.message.edit_text(
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2025-09-27 19:21:02,126 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:21:02,127 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:21:02,127 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:21:02,388 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:21:05,877 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:21:06,335 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:21:09,704 - [INFO] - aiogram.event - Update id=311888005 is handled. Duration 593 ms by bot id=7610043618
+2025-09-27 19:21:12,795 - [INFO] - aiogram.event - Update id=311888006 is handled. Duration 421 ms by bot id=7610043618
+2025-09-27 19:21:14,213 - [INFO] - aiogram.event - Update id=311888007 is handled. Duration 217 ms by bot id=7610043618
+2025-09-27 19:21:15,100 - [INFO] - aiogram.event - Update id=311888008 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:21:16,593 - [INFO] - aiogram.event - Update id=311888009 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:21:17,344 - [INFO] - aiogram.event - Update id=311888010 is handled. Duration 217 ms by bot id=7610043618
+2025-09-27 19:21:23,887 - [INFO] - aiogram.event - Update id=311888011 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 19:21:25,767 - [INFO] - aiogram.event - Update id=311888012 is handled. Duration 234 ms by bot id=7610043618
+2025-09-27 19:21:27,059 - [INFO] - aiogram.event - Update id=311888013 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:21:28,630 - [INFO] - aiogram.event - Update id=311888014 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 19:21:30,294 - [INFO] - aiogram.event - Update id=311888015 is handled. Duration 312 ms by bot id=7610043618
+2025-09-27 19:21:31,692 - [INFO] - aiogram.event - Update id=311888016 is handled. Duration 234 ms by bot id=7610043618
+2025-09-27 19:21:32,981 - [INFO] - aiogram.event - Update id=311888017 is handled. Duration 500 ms by bot id=7610043618
+2025-09-27 19:21:34,350 - [INFO] - aiogram.event - Update id=311888018 is handled. Duration 389 ms by bot id=7610043618
+2025-09-27 19:21:39,405 - [INFO] - aiogram.event - Update id=311888019 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:21:54,797 - [INFO] - aiogram.event - Update id=311888020 is handled. Duration 360 ms by bot id=7610043618
+2025-09-27 19:30:27,269 - [INFO] - aiogram.event - Update id=311888021 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 19:30:30,873 - [INFO] - aiogram.event - Update id=311888022 is handled. Duration 250 ms by bot id=7610043618
+2025-09-27 19:30:33,087 - [INFO] - aiogram.event - Update id=311888023 is handled. Duration 170 ms by bot id=7610043618
+2025-09-27 19:30:36,113 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:30:36,113 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:30:36,113 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:30:36,281 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:30:39,627 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:30:40,213 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:30:41,086 - [INFO] - aiogram.event - Update id=311888024 is handled. Duration 780 ms by bot id=7610043618
+2025-09-27 19:30:43,465 - [INFO] - aiogram.event - Update id=311888025 is handled. Duration 233 ms by bot id=7610043618
+2025-09-27 19:31:07,801 - [INFO] - aiogram.event - Update id=311888026 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:31:10,892 - [INFO] - aiogram.event - Update id=311888027 is handled. Duration 343 ms by bot id=7610043618
+2025-09-27 19:31:11,651 - [INFO] - aiogram.event - Update id=311888028 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:31:14,754 - [INFO] - aiogram.event - Update id=311888029 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-27 19:31:26,103 - [INFO] - aiogram.event - Update id=311888030 is handled. Duration 234 ms by bot id=7610043618
+2025-09-27 19:31:30,978 - [INFO] - aiogram.event - Update id=311888031 is handled. Duration 141 ms by bot id=7610043618
+2025-09-27 19:31:32,521 - [INFO] - aiogram.event - Update id=311888032 is handled. Duration 280 ms by bot id=7610043618
+2025-09-27 19:31:34,075 - [INFO] - aiogram.event - Update id=311888033 is handled. Duration 500 ms by bot id=7610043618
+2025-09-27 19:34:42,975 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:34:42,975 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:34:42,976 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:34:43,235 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:34:46,579 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:34:46,884 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:34:47,549 - [INFO] - aiogram.event - Update id=311888034 is handled. Duration 562 ms by bot id=7610043618
+2025-09-27 19:34:49,131 - [INFO] - aiogram.event - Update id=311888035 is handled. Duration 375 ms by bot id=7610043618
+2025-09-27 19:34:54,894 - [INFO] - aiogram.event - Update id=311888036 is not handled. Duration 280 ms by bot id=7610043618
+2025-09-27 19:34:54,894 - [ERROR] - aiogram.event - Cause exception while process update id=311888036 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 333, in handle_announcement_callbacks
+    await delete_announcement(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 423, in delete_announcement
+    await call.message.edit_text(f"🗑️ Объявление #{announcement_id} успешно удалено.", reply_markup=announcements_menu_kb())
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2025-09-27 19:34:57,798 - [INFO] - aiogram.event - Update id=311888037 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:34:59,163 - [INFO] - aiogram.event - Update id=311888038 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 19:35:00,357 - [INFO] - aiogram.event - Update id=311888039 is not handled. Duration 281 ms by bot id=7610043618
+2025-09-27 19:35:00,357 - [ERROR] - aiogram.event - Cause exception while process update id=311888039 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 317, in handle_announcement_callbacks
+    await view_announcement_detail(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 363, in view_announcement_detail
+    await call.message.edit_text("❌ Объявление не найдено.", reply_markup=announcements_menu_kb())
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-09-27 19:35:17,087 - [INFO] - aiogram.event - Update id=311888040 is not handled. Duration 311 ms by bot id=7610043618
+2025-09-27 19:35:17,087 - [ERROR] - aiogram.event - Cause exception while process update id=311888040 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 317, in handle_announcement_callbacks
+    await view_announcement_detail(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 363, in view_announcement_detail
+    await call.message.edit_text("❌ Объявление не найдено.", reply_markup=announcements_menu_kb())
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-09-27 19:35:18,246 - [INFO] - aiogram.event - Update id=311888041 is not handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:35:18,246 - [ERROR] - aiogram.event - Cause exception while process update id=311888041 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 317, in handle_announcement_callbacks
+    await view_announcement_detail(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 363, in view_announcement_detail
+    await call.message.edit_text("❌ Объявление не найдено.", reply_markup=announcements_menu_kb())
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-09-27 19:35:19,822 - [INFO] - aiogram.event - Update id=311888042 is handled. Duration 468 ms by bot id=7610043618
+2025-09-27 19:35:21,279 - [INFO] - aiogram.event - Update id=311888043 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 19:35:22,289 - [INFO] - aiogram.event - Update id=311888044 is handled. Duration 250 ms by bot id=7610043618
+2025-09-27 19:37:22,594 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:37:22,595 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:37:22,595 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:37:22,854 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:37:26,942 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:37:27,240 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:37:29,051 - [INFO] - aiogram.event - Update id=311888045 is handled. Duration 562 ms by bot id=7610043618
+2025-09-27 19:37:30,909 - [INFO] - aiogram.event - Update id=311888046 is not handled. Duration 234 ms by bot id=7610043618
+2025-09-27 19:37:30,909 - [ERROR] - aiogram.event - Cause exception while process update id=311888046 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 335, in handle_announcement_callbacks
+    await delete_announcement(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 433, in delete_announcement
+    await call.message.edit_text(
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2025-09-27 19:38:34,390 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:38:34,390 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:38:34,390 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:38:34,566 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:38:37,881 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:38:38,194 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:38:39,757 - [INFO] - aiogram.event - Update id=311888047 is not handled. Duration 500 ms by bot id=7610043618
+2025-09-27 19:38:39,757 - [ERROR] - aiogram.event - Cause exception while process update id=311888047 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 335, in handle_announcement_callbacks
+    await delete_announcement(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 443, in delete_announcement
+    await call.message.edit_text(
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2025-09-27 19:38:41,361 - [INFO] - aiogram.event - Update id=311888048 is handled. Duration 359 ms by bot id=7610043618
+2025-09-27 19:38:42,485 - [INFO] - aiogram.event - Update id=311888049 is handled. Duration 437 ms by bot id=7610043618
+2025-09-27 19:38:44,676 - [INFO] - aiogram.event - Update id=311888050 is handled. Duration 454 ms by bot id=7610043618
+2025-09-27 19:38:45,994 - [INFO] - aiogram.event - Update id=311888051 is handled. Duration 438 ms by bot id=7610043618
+2025-09-27 19:39:00,230 - [INFO] - aiogram.event - Update id=311888052 is handled. Duration 359 ms by bot id=7610043618
+2025-09-27 19:39:01,298 - [INFO] - aiogram.event - Update id=311888053 is handled. Duration 235 ms by bot id=7610043618
+2025-09-27 19:39:02,596 - [INFO] - aiogram.event - Update id=311888054 is handled. Duration 608 ms by bot id=7610043618
+2025-09-27 19:39:13,097 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:39:13,098 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:39:13,098 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:39:13,262 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:39:16,444 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-27 19:39:16,771 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-27 19:39:17,708 - [INFO] - aiogram.event - Update id=311888055 is handled. Duration 827 ms by bot id=7610043618
+2025-09-27 19:39:18,858 - [INFO] - aiogram.event - Update id=311888056 is handled. Duration 359 ms by bot id=7610043618
+2025-09-27 19:39:20,467 - [INFO] - aiogram.event - Update id=311888057 is handled. Duration 327 ms by bot id=7610043618
+2025-09-27 19:39:57,272 - [INFO] - aiogram.event - Update id=311888058 is handled. Duration 328 ms by bot id=7610043618
+2025-09-27 19:39:58,321 - [INFO] - aiogram.event - Update id=311888059 is handled. Duration 452 ms by bot id=7610043618
+2025-09-27 19:40:01,910 - [INFO] - aiogram.event - Update id=311888060 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 19:40:04,788 - [INFO] - aiogram.event - Update id=311888061 is handled. Duration 125 ms by bot id=7610043618
+2025-09-27 19:40:06,130 - [INFO] - aiogram.event - Update id=311888062 is handled. Duration 219 ms by bot id=7610043618
+2025-09-27 19:40:07,753 - [INFO] - aiogram.event - Update id=311888063 is handled. Duration 344 ms by bot id=7610043618
+2025-09-27 19:40:09,172 - [INFO] - aiogram.event - Update id=311888064 is not handled. Duration 235 ms by bot id=7610043618
+2025-09-27 19:40:09,172 - [ERROR] - aiogram.event - Cause exception while process update id=311888064 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 335, in handle_announcement_callbacks
+    await delete_announcement(call, announcement_id)
+  File "C:\Users\kules\PycharmProjects\telegrambot\v3\handlers\main_menu.py", line 443, in delete_announcement
+    await call.message.edit_text(
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2025-09-27 19:40:14,754 - [INFO] - aiogram.event - Update id=311888065 is handled. Duration 360 ms by bot id=7610043618
+2025-09-27 19:41:26,573 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-27 19:41:26,574 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-27 19:41:26,574 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-27 19:41:26,736 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'

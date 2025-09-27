@@ -10,3 +10,9 @@ class DevStates(StatesGroup):
 
 class EditHomeworkStates(StatesGroup):
     waiting_for_new_homework = State()
+
+# --- FSM СОСТОЯНИЯ ДЛЯ ОБЪЯВЛЕНИЙ ---
+class AnnouncementStates(StatesGroup):
+    """Состояния для процесса создания объявления."""
+    waiting_for_announcement_content = State()
+    waiting_for_announcement_title = State()
