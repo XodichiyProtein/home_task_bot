@@ -1,4 +1,4 @@
-from states.dev_states import EditHomeworkStates, AnnouncementStates
+from states.dev_states import EditHomeworkStates, AnnouncementStates, FeedbackStates
 
 from aiogram import types, Router, F, Bot
 from aiogram.fsm.context import FSMContext
@@ -29,8 +29,12 @@ from keyboards.keyboards import (
     get_next_announcement_id,
     save_announcements,
     get_edit_homework_keyboard,
+    get_next_complaint_id,
+    save_complaints,
+    FB_PREFIX, 
     BACK_PREFIX,
     ANN_PREFIX,
+    COMPLAINTS_DATA,
     ANNOUNCEMENTS_DATA,
 )
 
@@ -278,7 +282,7 @@ async def callback_back_action(callback: types.CallbackQuery):
             "🏠 Главное меню:", reply_markup=get_main_menu_keyboard(is_dev)
         )
     elif action == "ann-menu": # Новый колбэк для возврата из детального объявления
-        ann_keyboard = announcements_menu_kb() 
+        ann_keyboard = announcements_menu_kb(ANNOUNCEMENTS_DATA) 
         await callback.message.delete()
         await callback.message.answer(
             "📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
@@ -302,18 +306,14 @@ def is_developer(user_id: int) -> bool:
 async def handle_announcement_callbacks(call: types.CallbackQuery, state: FSMContext):
     user_id = call.from_user.id
     
-    # 1. Получаем часть данных после префикса (например, 'view:123' или 'create_start')
-    # Использование среза строки безопаснее, чем split('_')
     data_suffix = call.data[len(ANN_PREFIX):] 
     
-    # 2. Разделяем на действие и ID (разделяем только один раз)
     parts = data_suffix.split(':', 1)
     action = parts[0] # 'view', 'delete', 'create_start', 'no_ann'
     
     await call.answer()
     
     if action == "view":
-        # Проверяем, что ID присутствует (т.е. parts имеет 2 элемента)
         if len(parts) == 2:
             announcement_id = int(parts[1])
             await view_announcement_detail(call, announcement_id)
@@ -323,7 +323,7 @@ async def handle_announcement_callbacks(call: types.CallbackQuery, state: FSMCon
     if action == 'ViewMenu':
         await call.message.edit_text(
             "📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
-            reply_markup=announcements_menu_kb(), 
+            reply_markup=announcements_menu_kb(ANNOUNCEMENTS_DATA), 
             parse_mode="Markdown"
         )
         return
@@ -345,7 +345,6 @@ async def handle_announcement_callbacks(call: types.CallbackQuery, state: FSMCon
             await call.answer("⛔️ Недостаточно прав.", show_alert=True)
             
     elif action == "no_ann":
-        # Обрабатываем нажатие на кнопку "Нет актуальных объявлений"
         await call.answer("Нет актуальных объявлений.", show_alert=True)
         
 
@@ -382,10 +381,8 @@ async def view_announcement_detail(call: types.CallbackQuery, announcement_id: i
     caption = f"📣 **{title}**\n\n{announcement['text']}"
     
 
-    # Удаляем предыдущее сообщение
     await call.message.delete()
     
-    # --- ЛОГИКА ОТПРАВКИ КОНТЕНТА (ДОБАВЛЕНО ВИДЕО) ---
     if announcement['file_id']:
         if announcement['file_type'] == 'photo':
             await call.bot.send_photo(
@@ -419,50 +416,38 @@ async def view_announcement_detail(call: types.CallbackQuery, announcement_id: i
             reply_markup=kb, 
             parse_mode="Markdown"
         )
-
-
-# 6. Удаление объявления
 async def delete_announcement(call: types.CallbackQuery, announcement_id: int):
-    """Удаляет объявление."""
+    """
+    Удаляет объявление. 
+    Использует delete + send_message для надежной обработки медиасообщений.
+    """
     global ANNOUNCEMENTS_DATA
     
     original_len = len(ANNOUNCEMENTS_DATA)
-    # Имитируем удаление
-    ANNOUNCEMENTS_DATA = [a for a in ANNOUNCEMENTS_DATA if a['id'] != announcement_id]
     
+    ANNOUNCEMENTS_DATA = [a for a in ANNOUNCEMENTS_DATA if a['id'] != announcement_id]
+    print(len(ANNOUNCEMENTS_DATA))
     # Ответ пользователю
     if len(ANNOUNCEMENTS_DATA) < original_len:
-        save_announcements() # Сохраняем файл после удаления
         
-        # Получаем новое меню объявлений
-        new_kb = announcements_menu_kb()
-        new_text = f"🗑️ Объявление #{announcement_id} успешно удалено."
+        save_announcements()
 
-        try:
-            # Пытаемся изменить сообщение на меню объявлений
-            await call.message.edit_text(
-                text=new_text, 
-                reply_markup=new_kb
-            )
-        except aiogram.exceptions.TelegramBadRequest as e:
-            # Если возникла ошибка "message is not modified", просто отвечаем на колбэк
-            if "message is not modified" in str(e):
-                await call.answer(new_text.replace('**', ''), show_alert=True)
-                # Удаляем старое сообщение (с деталями удаленного объявления)
-                await call.message.delete()
-                # И отправляем новое (чтобы обновить клавиатуру главного меню объявлений)
-                await call.bot.send_message(
-                    chat_id=call.message.chat.id,
-                    text="📢 **Меню объявлений**\n\nАктуальные новости и обновления:", 
-                    reply_markup=new_kb, 
-                    parse_mode="Markdown"
-                )
-            else:
-                # Если это другая ошибка Telegram, пробрасываем ее
-                raise
-            
+        new_kb = announcements_menu_kb(ANNOUNCEMENTS_DATA)
+        
+        await call.message.delete()
+        
+        final_text = (
+            f"🗑️ **Объявление #{announcement_id} успешно удалено!**\n\n"
+            "📢 **Меню объявлений**\n\nАктуальные новости и обновления:"
+        )
+        
+        await call.bot.send_message(
+            chat_id=call.message.chat.id,
+            text=final_text, 
+            reply_markup=new_kb, 
+            parse_mode="Markdown"
+        )
     else:
-        # Если объявление не найдено
         await call.answer(f"❌ Объявление #{announcement_id} не найдено для удаления.", show_alert=True)
 
 @router.message(
@@ -556,4 +541,52 @@ async def process_announcement_title(message: types.Message, state: FSMContext):
         "Текст (подпись) станет основным содержанием объявления. \n\n"
         "Для отмены введите `/cancel`.",
         parse_mode="Markdown"
+    )
+
+@router.callback_query(F.data == f"{FB_PREFIX}connection")
+async def start_feedback_process(call: types.CallbackQuery, state: FSMContext):
+    await call.answer()
+    
+    await state.set_state(FeedbackStates.waiting_for_feedback)
+    
+    await call.message.edit_text(
+        "✍️ **Обратная связь**\n\n"
+        "Здесь вы можете написать **жалобу, предложение или идею** для улучшения бота. "
+        "Ваше сообщение будет анонимным для других пользователей, но я увижу ваш ID и имя пользователя.\n\n"
+        "Введите ваше сообщение или введите `/cancel` для отмены.",
+        parse_mode="Markdown"
+    )
+
+# --- 2. Обработчик получения текста обратной связи ---
+@router.message(FeedbackStates.waiting_for_feedback, F.text)
+async def process_user_feedback(message: types.Message, state: FSMContext):
+    
+    user_id = message.from_user.id
+    is_dev = user_id in DEVELOPER_IDS
+
+    if message.text.lower() == "/cancel":
+        await state.clear()
+        await message.answer(
+            "❌ Отправка обратной связи отменена.", 
+            reply_markup=get_main_menu_keyboard(is_dev)
+        )
+        return
+
+    complaint_id = get_next_complaint_id()
+    
+    # Сохраняем жалобу
+    COMPLAINTS_DATA.append({
+        'id': complaint_id,
+        'user_id': user_id,
+        'username': message.from_user.username or 'N/A',
+        'text': message.text,
+        'date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    })
+    
+    save_complaints()
+    
+    await state.clear()
+    await message.answer(
+        "✅ Ваше сообщение принято и будет рассмотрено разработчиком. Спасибо за вашу помощь!", 
+        reply_markup=get_main_menu_keyboard(is_dev)
     )

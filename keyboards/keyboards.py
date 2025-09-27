@@ -15,10 +15,51 @@ DEV_PREFIX = "dev_"
 EDIT_HOMEWORK_PREFIX = "edit_hw_"
 BACK_PREFIX = "back_"
 ANN_PREFIX = "ann_" 
+FB_PREFIX = "fb_"
+
+
+COMPLAINTS_FILE = 'complaints.json'
+COMPLAINTS_DATA = [] 
+NEXT_COMPLAINT_ID = 1
 
 ANNOUNCEMENTS_DATA = [] 
 NEXT_ANNOUNCEMENT_ID = 1 
 ANNOUNCEMENTS_FILE = 'announcements.json'
+
+
+
+def load_complaints():
+    """Загружает жалобы из локального JSON-файла."""
+    global COMPLAINTS_DATA, NEXT_COMPLAINT_ID
+    if os.path.exists(COMPLAINTS_FILE):
+        try:
+            with open(COMPLAINTS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                COMPLAINTS_DATA = data.get('complaints', [])
+                if COMPLAINTS_DATA:
+                    max_id = max(c['id'] for c in COMPLAINTS_DATA)
+                    NEXT_COMPLAINT_ID = max_id + 1
+                else:
+                    NEXT_COMPLAINT_ID = 1
+        except (json.JSONDecodeError, FileNotFoundError):
+            COMPLAINTS_DATA = []
+            NEXT_COMPLAINT_ID = 1
+    else:
+        COMPLAINTS_DATA = []
+        NEXT_COMPLAINT_ID = 1
+
+def save_complaints():
+    """Сохраняет жалобы в локальный JSON-файл."""
+    data = {'complaints': COMPLAINTS_DATA}
+    with open(COMPLAINTS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+def get_next_complaint_id() -> int:
+    """Получает следующий ID для новой жалобы."""
+    global NEXT_COMPLAINT_ID
+    current_id = NEXT_COMPLAINT_ID
+    NEXT_COMPLAINT_ID += 1
+    return current_id
 
 def load_announcements():
     """Загружает объявления из локального JSON-файла."""
@@ -56,30 +97,29 @@ def get_next_announcement_id() -> int:
     NEXT_ANNOUNCEMENT_ID += 1
     return current_id
 
-def announcements_menu_kb() -> types.InlineKeyboardMarkup:
+def announcements_menu_kb(announcements_list: List[Dict]) -> types.InlineKeyboardMarkup:
     """
-    Создает клавиатуру для меню объявлений с динамическим списком.
+    Создает клавиатуру для меню объявлений, используя ПЕРЕДАННЫЙ список.
+
+    :param announcements_list: Актуальный список объявлений.
     """
     builder = InlineKeyboardBuilder()
     
-    if not ANNOUNCEMENTS_DATA:
+    if not announcements_list: # <-- Используем переданный список
         builder.button(text="Нет актуальных объявлений 😔", callback_data=f"{ANN_PREFIX}no_ann")
     else:
-        # Создаем кнопки для всех объявлений, используя title
-        for ann in ANNOUNCEMENTS_DATA:
-            # Получаем title. Используем ID как запасной вариант, если title почему-то отсутствует.
+        # Создаем кнопки для всех объявлений
+        for ann in announcements_list:
             title = ann.get('title', f"Объявление #{ann['id']}") 
             
             builder.button(
-                # Отображаем название объявления
                 text=f"📢 {title}", 
                 callback_data=f"{ANN_PREFIX}view:{ann['id']}"
             )
 
-    builder.adjust(1) # Кнопки объявлений в один ряд
+    builder.adjust(1)
     builder.row(types.InlineKeyboardButton(text="⬅️ Назад", callback_data=f"{BACK_PREFIX}main-menu"))
     return builder.as_markup()
-
 
 def announcement_detail_kb(announcement_id: int, is_developer: bool = False) -> types.InlineKeyboardMarkup:
     """
@@ -162,6 +202,20 @@ def get_letter_keyboard(
     builder.adjust(3, 3, 3)
     return builder.as_markup()
 
+def get_complaint_keyboard(complaint_id: int) -> types.InlineKeyboardMarkup:
+    """Создает клавиатуру для обработки жалобы."""
+    builder = InlineKeyboardBuilder()
+    
+    # fb_skip:<id>
+    builder.button(text="➡️ Пропустить", callback_data=f"{FB_PREFIX}skip:{complaint_id}") 
+    # fb_reply:<id>
+    builder.button(text="💬 Ответить", callback_data=f"{FB_PREFIX}reply:{complaint_id}")
+    # fb_ignore:<id>
+    builder.button(text="🗑️ Игнорировать", callback_data=f"{FB_PREFIX}ignore:{complaint_id}")
+    builder.button(text="❌ В меню", callback_data=f"{FB_PREFIX}back:{complaint_id}")
+    
+    builder.adjust(3, 1)
+    return builder.as_markup()
 
 def get_main_menu_keyboard(
     is_developer: bool = False, current_center_date: Optional[datetime] = None
@@ -187,7 +241,7 @@ def get_main_menu_keyboard(
     # Кнопки первого ряда
     builder.button(text="📚 Объявление", callback_data=f"{ANN_PREFIX}ViewMenu")
     # builder.button(text="😎 В разработке", callback_data=f"{MENU_PREFIX}test")
-    # builder.button(text="☎️ Связь", callback_data=f"{MENU_PREFIX}connection")
+    builder.button(text="☎️ Связь", callback_data=f"{FB_PREFIX}connection")
 
     builder.button(
         text="<",
@@ -214,7 +268,7 @@ def get_main_menu_keyboard(
     if is_developer:
         builder.button(text="💻 Меню Разработчика", callback_data=f"{DEV_PREFIX}dev")
         # builder.adjust(3, 5, 1)
-        builder.adjust(1, 5, 1)
+        builder.adjust(2, 5, 1)
     else:
         builder.adjust(5)
 
@@ -226,11 +280,13 @@ def get_developer_menu_keyboard() -> types.InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
 
     builder.button(text="🔄 Добавить таблицу", callback_data=f"{DEV_PREFIX}TableAdd")
+    builder.button(text='🔮 Жалобы', callback_data=f'{FB_PREFIX}complaints')
     builder.button(text="➕ Создать объявление", callback_data=f"{ANN_PREFIX}CreateStart")
     builder.button(text="👥 Добавить админа", callback_data=f"{DEV_PREFIX}AdminAdd")
     builder.button(text="👥 Удалить админа", callback_data=f"{DEV_PREFIX}AdminRemove")
     builder.button(text="❌ Закрыть меню", callback_data=f"{DEV_PREFIX}close")
 
-    builder.adjust(2, 2, 1)
+    builder.adjust(3, 2, 1)
     return builder.as_markup()
 load_announcements()
+load_complaints() 

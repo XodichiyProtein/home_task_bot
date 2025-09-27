@@ -2,14 +2,16 @@
 from aiogram import types, Router, F, Bot
 from aiogram.fsm.context import FSMContext
 from config import DEVELOPER_IDS, DEV_PREFIX, DOWNLOAD_DIR, MENU_PREFIX
+from aiogram.exceptions import TelegramBadRequest 
 from states.dev_states import DevStates
-from keyboards.keyboards import get_main_menu_keyboard, get_developer_menu_keyboard
+from keyboards.keyboards import get_main_menu_keyboard, get_developer_menu_keyboard, get_complaint_keyboard, FB_PREFIX, COMPLAINTS_DATA, save_complaints
 from utils.handlers import (
     UPDATE_DEVELOPER_IDS_PERMANENTLY,
     REMOVE_DEVELOPER_ID_PERMANENTLY,
 )
 from utils.parser import run
 import os
+import html 
 
 router = Router()
 
@@ -225,3 +227,177 @@ async def process_admin_id_remove(message: types.Message, state: FSMContext):
     await message.answer(
         "Выберите следующее действие:", reply_markup=get_main_menu_keyboard(is_dev)
     )
+
+async def show_next_complaint(callback: types.CallbackQuery, state: FSMContext):
+    """Показывает разработчику первую жалобу из очереди COMPLAINTS_DATA."""
+    
+    await state.clear()
+    
+    if not COMPLAINTS_DATA:
+        # Если жалоб нет, отправляем сообщение об окончании
+        try:
+            await callback.message.edit_text(
+                "🎉 <b>Все жалобы обработаны!</b>",
+                reply_markup=get_developer_menu_keyboard(),
+                parse_mode="HTML"
+            )
+        except TelegramBadRequest as e:
+            # Игнорируем ошибку, если сообщение уже говорит о том, что все обработано
+            if "message is not modified" not in str(e):
+                raise e
+        return
+        
+    complaint = COMPLAINTS_DATA[0]
+    
+    # 1. Экранируем пользовательский текст с помощью стандартного html.escape()
+    # Это экранирует <, >, & - единственные символы, ломающие HTML.
+    escaped_complaint_text = html.escape(complaint['text'])
+    
+    # 2. Оборачиваем экранированный текст в тег <code> для отображения "как есть"
+    # Тег <code> гарантирует, что \n будут отображены корректно.
+    complaint_code_block = f"<code>{escaped_complaint_text}</code>"
+    
+    # Используем HTML-теги для остальной разметки
+    text = (
+        f"⚠️ <b>Новая жалоба #{complaint['id']}</b>\n"
+        f"👤 ID Пользователя: <code>{complaint['user_id']}</code>\n"
+        f"@{complaint.get('username', 'N/A')}\n"
+        f"🕒 Дата: {complaint['date']}\n"
+        f"---"
+        f"\n<b>Содержание:</b>\n{complaint_code_block}" # Вставляем блок кода
+    )
+    
+    await callback.message.edit_text(
+        text,
+        reply_markup=get_complaint_keyboard(complaint['id']),
+        parse_mode="HTML" # Используем HTML
+    )
+    
+    await state.update_data(current_complaint_id=complaint['id'])
+@router.callback_query(F.data == f"{FB_PREFIX}complaints")
+async def start_complaint_review(callback: types.CallbackQuery, state: FSMContext):
+    user_id = callback.from_user.id
+    if user_id not in DEVELOPER_IDS:
+        await callback.answer("⛔️ Недостаточно прав.", show_alert=True)
+        return
+    
+    await callback.answer("Проверка жалоб...")
+    await show_next_complaint(callback, state)
+
+@router.callback_query(F.data.startswith(FB_PREFIX))
+async def handle_complaint_actions(callback: types.CallbackQuery, state: FSMContext, bot: Bot):
+    
+    user_id = callback.from_user.id
+    if user_id not in DEVELOPER_IDS:
+        await callback.answer("⛔️ Недостаточно прав.", show_alert=True)
+        return
+
+    await callback.answer()
+    print(callback.data)
+    # Разделяем: fb_skip:<id> -> [fb, skip, <id>]
+    action, complaint_id_str = callback.data.split(":")
+    action = action.split('_')[-1]
+    complaint_id = int(complaint_id_str)
+    
+    current_state_data = await state.get_data()
+    current_complaint_id = current_state_data.get('current_complaint_id')
+    
+    # Проверка актуальности жалобы
+    if current_complaint_id != complaint_id or not COMPLAINTS_DATA or COMPLAINTS_DATA[0]['id'] != complaint_id:
+        await callback.answer("⚠️ Эта жалоба устарела или уже обработана. Обновляю.", show_alert=True)
+        await show_next_complaint(callback, state)
+        return
+        
+    print(action)
+    if action == "back":
+        await state.clear()
+        await callback.message.edit_text(
+            "💻 **Меню Разработчика**",
+            parse_mode="Markdown",
+            reply_markup=get_developer_menu_keyboard(),
+        )
+        return
+    # --- КОНЕЦ ОБРАБОТЧИКА КНОПКИ НАЗАД ---
+
+    # Для skip, reply, ignore требуется ID
+    try:
+        complaint_id = int(complaint_id_str)
+    except (TypeError, ValueError):
+        await callback.answer("❌ Не удалось найти ID жалобы.", show_alert=True)
+        return
+    if action == "skip":
+        # Пропустить: перемещаем текущий элемент в конец списка (имитация очереди)
+        skipped_complaint = COMPLAINTS_DATA.pop(0) # Удаляем первый
+        COMPLAINTS_DATA.append(skipped_complaint) # Добавляем в конец
+        
+        await callback.answer("➡️ Жалоба пропущена и перемещена в конец очереди.", show_alert=True)
+        save_complaints()
+        await show_next_complaint(callback, state)
+
+    elif action == "ignore":
+        # Игнорировать: удаляем текущий элемент
+        COMPLAINTS_DATA.pop(0)
+            
+        await callback.answer("🗑️ Жалоба проигнорирована и удалена.", show_alert=True)
+        save_complaints()
+        await show_next_complaint(callback, state)
+
+    elif action == "reply":
+        # Ответить: переходим в FSM-состояние для ввода текста
+        await state.update_data(
+            target_user_id=COMPLAINTS_DATA[0]['user_id']
+        )
+        await state.set_state(DevStates.waiting_for_complaint_reply)
+        
+        await callback.message.edit_text(
+            f"💬 **Ответ на жалобу #{complaint_id}:**\n\n"
+            f"Введите текст вашего ответа пользователю с ID **{COMPLAINTS_DATA[0]['user_id']}**.\n\n"
+            "Для отмены введите `/cancel`."
+        )
+
+# --- E. Обработчик получения ответа разработчика ---
+@router.message(DevStates.waiting_for_complaint_reply, F.text)
+async def process_developer_reply(message: types.Message, state: FSMContext, bot: Bot):
+    
+    user_data = await state.get_data()
+    target_user_id = user_data.get('target_user_id')
+    
+    is_dev = message.from_user.id in DEVELOPER_IDS
+
+    if message.text.lower() == "/cancel":
+        await state.clear()
+        await message.answer(
+            "❌ Ответ отменен. Жалоба осталась в очереди.",
+            reply_markup=get_developer_menu_keyboard()
+        )
+        return
+
+    # 1. Отправляем ответ пользователю
+    reply_text = (
+        f"🤖 **Ответ от разработчика**\n\n"
+        f"Ваше обращение было рассмотрено. Вот ответ:\n\n"
+        f"---"
+        f"\n{message.text}"
+    )
+    
+    try:
+        await bot.send_message(chat_id=target_user_id, text=reply_text, parse_mode="Markdown")
+        
+        # 2. Удаляем жалобу из очереди (так как на нее ответили)
+        if COMPLAINTS_DATA and COMPLAINTS_DATA[0]['user_id'] == target_user_id:
+            COMPLAINTS_DATA.pop(0)
+            save_complaints()
+            await message.answer("✅ Ответ успешно отправлен, жалоба удалена из очереди.")
+        else:
+            # Если жалоба была удалена другим разработчиком, просто подтверждаем отправку ответа
+            await message.answer("⚠️ Ответ отправлен, но жалоба не найдена в начале очереди.")
+            
+    except Exception as e:
+        await message.answer(f"❌ **Ошибка при отправке ответа пользователю:** {e}")
+        # Не удаляем жалобу, если не смогли ответить
+        
+    await state.clear()
+    
+    # 3. Возвращаемся в меню разработчика
+    await message.answer("Выберите следующее действие:", 
+                         reply_markup=get_developer_menu_keyboard())      
