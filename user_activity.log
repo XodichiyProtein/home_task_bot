@@ -24,3 +24,17 @@
 2025-09-25 14:38:40,677 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
 2025-09-25 14:38:41,924 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
 2025-09-25 14:38:43,714 - [INFO] - UserID:6221996571 - Action:CALLBACK_QUERY - Handler:callback_select_date - User is viewing schedule for a specific date.
+2025-09-28 21:43:29,143 - [INFO] - UserID:1265901174 - Action:start_new_user - Handler:cmd_start - Новый пользователь начал работу.
+2025-09-28 21:43:49,599 - [INFO] - UserID:1265901174 - Action:select_class_num - Handler:callback_select_class - Выбран номер класса: 11.
+2025-09-28 21:43:51,561 - [INFO] - UserID:1265901174 - Action:class_set_success - Handler:callback_select_letter - Класс успешно установлен: 11а. Username: krex3rn
+2025-09-28 21:43:56,600 - [INFO] - UserID:1265901174 - Action:menu_scroll_right - Handler:callback_scroll_right - Скролл меню вправо. Текущая дата: 2025-09-28
+2025-09-28 21:43:58,151 - [INFO] - UserID:1265901174 - Action:menu_scroll_left - Handler:callback_scroll_left - Скролл меню влево. Текущая дата: 2025-10-01
+2025-09-28 21:44:26,983 - [INFO] - UserID:6221996571 - Action:menu_scroll_left - Handler:callback_scroll_left - Скролл меню влево. Текущая дата: 2025-09-28
+2025-09-28 21:44:28,194 - [INFO] - UserID:6221996571 - Action:menu_scroll_right - Handler:callback_scroll_right - Скролл меню вправо. Текущая дата: 2025-09-25
+2025-09-28 21:48:12,199 - [INFO] - UserID:6221996571 - Action:back_action_main-menu - Handler:callback_back_action - Выполнено действие 'Назад'. Действие: main-menu
+2025-09-28 21:54:04,372 - [INFO] - UserID:6221996571 - Action:start_new_user - Handler:cmd_start - Новый пользователь начал работу.
+2025-09-28 21:54:06,184 - [INFO] - UserID:6221996571 - Action:select_class_num - Handler:callback_select_class - Выбран номер класса: 9.
+2025-09-28 21:54:07,036 - [INFO] - UserID:6221996571 - Action:class_set_success - Handler:callback_select_letter - Класс успешно установлен: 9а. Username: Pavel_Protein
+2025-09-28 21:54:09,882 - [INFO] - UserID:6221996571 - Action:schedule_view_success - Handler:callback_show_date_data - Показано расписание. Дата: 2025-09-28, Класс: 9а
+2025-09-28 21:54:11,342 - [INFO] - UserID:6221996571 - Action:back_action_main-menu - Handler:callback_back_action - Выполнено действие 'Назад'. Действие: main-menu
+2025-09-28 21:55:15,522 - [INFO] - UserID:6221996571 - Action:start_existing_user - Handler:cmd_start - Пользователь вернулся. Класс: 9а

@@ -6290,3 +6290,472 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2025-09-27 23:35:00,252 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 2025-09-27 23:35:00,252 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
 2025-09-27 23:35:00,521 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:22:02,367 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:22:02,815 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:22:16,536 - [INFO] - aiogram.event - Update id=311888506 is handled. Duration 359 ms by bot id=7610043618
+2025-09-28 14:22:21,652 - [INFO] - aiogram.event - Update id=311888507 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 14:22:26,730 - [INFO] - aiogram.event - Update id=311888508 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 14:22:27,030 - [INFO] - aiogram.event - Update id=311888509 is handled. Duration 157 ms by bot id=7610043618
+2025-09-28 14:22:38,248 - [INFO] - aiogram.event - Update id=311888510 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 14:22:38,888 - [INFO] - aiogram.event - Update id=311888511 is handled. Duration 108 ms by bot id=7610043618
+2025-09-28 14:22:39,728 - [INFO] - aiogram.event - Update id=311888512 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 14:22:45,181 - [INFO] - aiogram.event - Update id=311888513 is handled. Duration 250 ms by bot id=7610043618
+2025-09-28 14:23:12,344 - [INFO] - aiogram.event - Update id=311888514 is handled. Duration 218 ms by bot id=7610043618
+2025-09-28 14:23:14,220 - [INFO] - aiogram.event - Update id=311888515 is handled. Duration 343 ms by bot id=7610043618
+2025-09-28 14:23:15,429 - [INFO] - aiogram.event - Update id=311888516 is handled. Duration 110 ms by bot id=7610043618
+2025-09-28 14:23:16,527 - [INFO] - aiogram.event - Update id=311888517 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 14:23:16,776 - [INFO] - aiogram.event - Update id=311888518 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 14:23:18,329 - [INFO] - aiogram.event - Update id=311888519 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 14:23:20,186 - [INFO] - aiogram.event - Update id=311888520 is handled. Duration 235 ms by bot id=7610043618
+2025-09-28 14:46:04,710 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:46:04,724 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:46:04,724 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:46:04,988 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:46:11,081 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:46:11,537 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:46:14,899 - [INFO] - aiogram.event - Update id=311888521 is handled. Duration 297 ms by bot id=7610043618
+2025-09-28 14:46:18,104 - [INFO] - aiogram.event - Update id=311888522 is handled. Duration 141 ms by bot id=7610043618
+2025-09-28 14:46:30,705 - [INFO] - aiogram.event - Update id=311888523 is handled. Duration 233 ms by bot id=7610043618
+2025-09-28 14:46:32,763 - [INFO] - aiogram.event - Update id=311888524 is handled. Duration 250 ms by bot id=7610043618
+2025-09-28 14:47:41,759 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:47:41,763 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:47:41,764 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:47:42,025 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:47:47,191 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:47:47,625 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:47:48,046 - [INFO] - aiogram.event - Update id=311888525 is handled. Duration 312 ms by bot id=7610043618
+2025-09-28 14:48:11,639 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:48:11,641 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:48:11,641 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:48:11,898 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:48:22,124 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:48:22,434 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:48:28,596 - [INFO] - aiogram.event - Update id=311888526 is handled. Duration 766 ms by bot id=7610043618
+2025-09-28 14:48:30,995 - [INFO] - aiogram.event - Update id=311888527 is handled. Duration 217 ms by bot id=7610043618
+2025-09-28 14:48:33,203 - [INFO] - aiogram.event - Update id=311888528 is handled. Duration 139 ms by bot id=7610043618
+2025-09-28 14:49:48,038 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:49:48,040 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:49:48,041 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:49:48,307 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:49:52,710 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:49:53,077 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:49:59,881 - [INFO] - aiogram.event - Update id=311888529 is handled. Duration 311 ms by bot id=7610043618
+2025-09-28 14:50:19,804 - [INFO] - aiogram.event - Update id=311888530 is handled. Duration 844 ms by bot id=7610043618
+2025-09-28 14:50:22,645 - [INFO] - aiogram.event - Update id=311888531 is handled. Duration 547 ms by bot id=7610043618
+2025-09-28 14:50:30,748 - [INFO] - aiogram.event - Update id=311888532 is not handled. Duration 297 ms by bot id=7610043618
+2025-09-28 14:50:30,749 - [ERROR] - aiogram.event - Cause exception while process update id=311888532 by bot id=7610043618
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 43
+Traceback (most recent call last):
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\julia\Downloads\tgBOT\v2\handlers\developer\handlers_developer.py", line 147, in process_admin_id_input
+    await message.answer(
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\julia\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 43
+2025-09-28 14:52:05,139 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:52:05,144 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:52:05,145 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:52:05,409 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:52:11,240 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:52:11,709 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:52:13,565 - [INFO] - aiogram.event - Update id=311888533 is handled. Duration 453 ms by bot id=7610043618
+2025-09-28 14:52:33,875 - [INFO] - aiogram.event - Update id=311888534 is handled. Duration 967 ms by bot id=7610043618
+2025-09-28 14:52:36,003 - [INFO] - aiogram.event - Update id=311888535 is handled. Duration 500 ms by bot id=7610043618
+2025-09-28 14:52:43,004 - [INFO] - aiogram.event - Update id=311888536 is handled. Duration 422 ms by bot id=7610043618
+2025-09-28 14:53:18,195 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:53:18,200 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:53:18,201 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:53:18,464 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:53:22,687 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:53:23,100 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:53:29,266 - [INFO] - aiogram.event - Update id=311888537 is handled. Duration 327 ms by bot id=7610043618
+2025-09-28 14:53:31,859 - [INFO] - aiogram.event - Update id=311888538 is handled. Duration 407 ms by bot id=7610043618
+2025-09-28 14:53:34,043 - [INFO] - aiogram.event - Update id=311888539 is handled. Duration 875 ms by bot id=7610043618
+2025-09-28 14:53:38,395 - [INFO] - aiogram.event - Update id=311888540 is handled. Duration 313 ms by bot id=7610043618
+2025-09-28 14:54:59,344 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:54:59,346 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:54:59,346 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:54:59,605 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:55:04,485 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:55:04,906 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:55:12,532 - [INFO] - aiogram.event - Update id=311888541 is handled. Duration 313 ms by bot id=7610043618
+2025-09-28 14:55:14,992 - [INFO] - aiogram.event - Update id=311888542 is handled. Duration 406 ms by bot id=7610043618
+2025-09-28 14:55:24,668 - [INFO] - aiogram.event - Update id=311888543 is handled. Duration 406 ms by bot id=7610043618
+2025-09-28 14:56:39,581 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:56:39,586 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:56:39,587 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:56:39,853 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:56:43,845 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:56:44,269 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:56:46,394 - [INFO] - aiogram.event - Update id=311888544 is handled. Duration 531 ms by bot id=7610043618
+2025-09-28 14:56:48,957 - [INFO] - aiogram.event - Update id=311888545 is handled. Duration 686 ms by bot id=7610043618
+2025-09-28 14:58:27,866 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:58:27,868 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:58:27,869 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:58:28,125 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:58:32,212 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:58:32,544 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:58:44,380 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:58:44,381 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:58:44,382 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:58:44,643 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:58:48,488 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 14:58:48,793 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 14:58:53,608 - [INFO] - aiogram.event - Update id=311888546 is handled. Duration 532 ms by bot id=7610043618
+2025-09-28 14:58:56,804 - [INFO] - aiogram.event - Update id=311888547 is handled. Duration 108 ms by bot id=7610043618
+2025-09-28 14:59:01,143 - [INFO] - aiogram.event - Update id=311888548 is handled. Duration 422 ms by bot id=7610043618
+2025-09-28 14:59:08,515 - [INFO] - aiogram.event - Update id=311888549 is handled. Duration 358 ms by bot id=7610043618
+2025-09-28 14:59:56,642 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 14:59:56,644 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 14:59:56,646 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 14:59:56,908 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:00:36,882 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:00:37,296 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:01:49,885 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:01:49,888 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:01:49,889 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:01:50,148 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:01:53,960 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:01:54,333 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:06:26,903 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:06:26,906 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:06:26,907 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:06:27,160 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:07:21,345 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:07:22,263 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:07:29,498 - [INFO] - aiogram.event - Update id=311888550 is handled. Duration 390 ms by bot id=7610043618
+2025-09-28 15:07:33,110 - [INFO] - aiogram.event - Update id=311888551 is handled. Duration 218 ms by bot id=7610043618
+2025-09-28 15:07:36,916 - [INFO] - aiogram.event - Update id=311888552 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 15:07:41,002 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:07:41,004 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:07:41,005 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:07:41,266 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:07:51,607 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:07:51,920 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:07:53,159 - [INFO] - aiogram.event - Update id=311888553 is handled. Duration 438 ms by bot id=7610043618
+2025-09-28 15:07:57,379 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:07:57,382 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:07:57,383 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:07:57,638 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:08:01,807 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:08:02,120 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:08:02,526 - [INFO] - aiogram.event - Update id=311888554 is handled. Duration 313 ms by bot id=7610043618
+2025-09-28 15:08:02,707 - [INFO] - aiogram.event - Update id=311888555 is handled. Duration 295 ms by bot id=7610043618
+2025-09-28 15:08:06,043 - [INFO] - aiogram.event - Update id=311888556 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 15:08:06,687 - [INFO] - aiogram.event - Update id=311888557 is handled. Duration 156 ms by bot id=7610043618
+2025-09-28 15:08:07,688 - [INFO] - aiogram.event - Update id=311888558 is handled. Duration 203 ms by bot id=7610043618
+2025-09-28 15:08:09,945 - [INFO] - aiogram.event - Update id=311888559 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 15:08:11,482 - [INFO] - aiogram.event - Update id=311888560 is handled. Duration 109 ms by bot id=7610043618
+2025-09-28 15:09:54,643 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:09:54,646 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:09:54,646 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:09:54,899 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:09:59,002 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:09:59,391 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:10:06,368 - [INFO] - aiogram.event - Update id=311888561 is handled. Duration 311 ms by bot id=7610043618
+2025-09-28 15:11:27,938 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:11:27,940 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:11:27,941 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:11:28,198 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:13:53,345 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:13:53,723 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:13:58,308 - [INFO] - aiogram.event - Update id=311888562 is handled. Duration 750 ms by bot id=7610043618
+2025-09-28 15:14:00,795 - [INFO] - aiogram.event - Update id=311888563 is handled. Duration 328 ms by bot id=7610043618
+2025-09-28 15:15:34,675 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:15:34,678 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:15:34,679 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:15:34,944 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:15:38,779 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:15:39,106 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:15:45,867 - [INFO] - aiogram.event - Update id=311888564 is handled. Duration 436 ms by bot id=7610043618
+2025-09-28 15:15:48,306 - [INFO] - aiogram.event - Update id=311888565 is handled. Duration 219 ms by bot id=7610043618
+2025-09-28 15:16:02,158 - [INFO] - aiogram.event - Update id=311888566 is handled. Duration 250 ms by bot id=7610043618
+2025-09-28 15:17:52,059 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:17:52,060 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:17:52,061 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:17:52,320 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:17:56,026 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:17:56,425 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:17:57,012 - [INFO] - aiogram.event - Update id=311888567 is handled. Duration 483 ms by bot id=7610043618
+2025-09-28 15:17:57,208 - [INFO] - aiogram.event - Update id=311888568 is handled. Duration 452 ms by bot id=7610043618
+2025-09-28 15:18:11,510 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:18:11,512 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:18:11,514 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:18:11,768 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:18:15,738 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:18:16,041 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:18:20,960 - [INFO] - aiogram.event - Update id=311888569 is handled. Duration 389 ms by bot id=7610043618
+2025-09-28 15:19:10,973 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:19:10,978 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:19:10,979 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:19:11,237 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:19:14,686 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:19:15,121 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:19:20,176 - [INFO] - aiogram.event - Update id=311888570 is handled. Duration 406 ms by bot id=7610043618
+2025-09-28 15:20:00,257 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:20:00,261 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:20:00,262 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:20:00,514 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:20:04,465 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:20:04,792 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:20:06,663 - [INFO] - aiogram.event - Update id=311888571 is handled. Duration 454 ms by bot id=7610043618
+2025-09-28 15:20:28,562 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:20:28,565 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:20:28,566 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:20:28,819 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:20:32,960 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:20:33,453 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:20:34,100 - [INFO] - aiogram.event - Update id=311888572 is handled. Duration 530 ms by bot id=7610043618
+2025-09-28 15:20:45,134 - [INFO] - aiogram.event - Update id=311888573 is handled. Duration 327 ms by bot id=7610043618
+2025-09-28 15:21:04,663 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:21:04,667 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:21:04,668 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:21:04,928 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:21:08,515 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:21:09,736 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:21:14,538 - [INFO] - aiogram.event - Update id=311888574 is handled. Duration 1765 ms by bot id=7610043618
+2025-09-28 15:22:13,553 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:22:13,556 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:22:13,558 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:22:13,819 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:22:17,346 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:22:17,733 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:22:23,592 - [INFO] - aiogram.event - Update id=311888575 is handled. Duration 875 ms by bot id=7610043618
+2025-09-28 15:22:41,883 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:22:41,885 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:22:41,886 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:22:42,150 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:22:46,687 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:22:46,994 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:22:48,071 - [INFO] - aiogram.event - Update id=311888576 is handled. Duration 452 ms by bot id=7610043618
+2025-09-28 15:23:05,571 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 15:23:05,574 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 15:23:05,575 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 15:23:05,840 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:23:09,575 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 15:23:10,028 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 15:23:18,521 - [INFO] - aiogram.event - Update id=311888577 is handled. Duration 983 ms by bot id=7610043618
+2025-09-28 15:23:18,968 - [INFO] - aiogram.event - Update id=311888578 is handled. Duration 343 ms by bot id=7610043618
+2025-09-28 15:23:20,220 - [INFO] - aiogram.event - Update id=311888579 is handled. Duration 327 ms by bot id=7610043618
+2025-09-28 15:23:21,496 - [INFO] - aiogram.event - Update id=311888580 is handled. Duration 561 ms by bot id=7610043618
+2025-09-28 16:18:07,806 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 16:18:07,848 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 16:18:07,851 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 16:18:08,152 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:43:28,606 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:43:29,042 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:43:29,503 - [INFO] - aiogram.event - Update id=311888585 is handled. Duration 360 ms by bot id=7610043618
+2025-09-28 21:43:49,732 - [INFO] - aiogram.event - Update id=311888586 is handled. Duration 250 ms by bot id=7610043618
+2025-09-28 21:43:51,691 - [INFO] - aiogram.event - Update id=311888587 is handled. Duration 139 ms by bot id=7610043618
+2025-09-28 21:43:56,716 - [INFO] - aiogram.event - Update id=311888588 is handled. Duration 217 ms by bot id=7610043618
+2025-09-28 21:43:58,274 - [INFO] - aiogram.event - Update id=311888589 is handled. Duration 233 ms by bot id=7610043618
+2025-09-28 21:44:23,017 - [INFO] - aiogram.event - Update id=311888590 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 21:44:27,138 - [INFO] - aiogram.event - Update id=311888591 is handled. Duration 280 ms by bot id=7610043618
+2025-09-28 21:44:28,317 - [INFO] - aiogram.event - Update id=311888592 is handled. Duration 219 ms by bot id=7610043618
+2025-09-28 21:44:29,089 - [INFO] - aiogram.event - Update id=311888593 is handled. Duration 139 ms by bot id=7610043618
+2025-09-28 21:44:30,263 - [INFO] - aiogram.event - Update id=311888594 is handled. Duration 108 ms by bot id=7610043618
+2025-09-28 21:47:49,902 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:47:49,903 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:47:49,903 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:47:50,165 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:47:53,300 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:47:53,744 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:48:07,763 - [INFO] - aiogram.event - Update id=311888595 is handled. Duration 547 ms by bot id=7610043618
+2025-09-28 21:48:09,258 - [INFO] - aiogram.event - Update id=311888596 is handled. Duration 139 ms by bot id=7610043618
+2025-09-28 21:48:10,887 - [INFO] - aiogram.event - Update id=311888597 is handled. Duration 327 ms by bot id=7610043618
+2025-09-28 21:48:12,559 - [INFO] - aiogram.event - Update id=311888598 is handled. Duration 530 ms by bot id=7610043618
+2025-09-28 21:48:21,497 - [INFO] - aiogram.event - Update id=311888599 is handled. Duration 235 ms by bot id=7610043618
+2025-09-28 21:50:51,077 - [INFO] - aiogram.event - Update id=311888600 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 21:53:29,374 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:53:29,374 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:53:29,375 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:53:29,631 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:54:01,012 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:54:01,318 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:54:04,724 - [INFO] - aiogram.event - Update id=311888601 is handled. Duration 342 ms by bot id=7610043618
+2025-09-28 21:54:06,306 - [INFO] - aiogram.event - Update id=311888602 is handled. Duration 250 ms by bot id=7610043618
+2025-09-28 21:54:07,233 - [INFO] - aiogram.event - Update id=311888603 is handled. Duration 202 ms by bot id=7610043618
+2025-09-28 21:54:10,384 - [INFO] - aiogram.event - Update id=311888604 is handled. Duration 1061 ms by bot id=7610043618
+2025-09-28 21:54:11,619 - [INFO] - aiogram.event - Update id=311888605 is handled. Duration 391 ms by bot id=7610043618
+2025-09-28 21:54:19,620 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:54:19,621 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:54:19,621 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:54:19,882 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:55:05,632 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:55:05,924 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:55:15,995 - [INFO] - aiogram.event - Update id=311888606 is handled. Duration 485 ms by bot id=7610043618
+2025-09-28 21:55:16,990 - [INFO] - aiogram.event - Update id=311888607 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 21:55:48,157 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:55:48,158 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:55:48,158 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:55:48,418 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:55:51,660 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:55:51,975 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:55:52,678 - [INFO] - aiogram.event - Update id=311888608 is handled. Duration 563 ms by bot id=7610043618
+2025-09-28 21:55:55,032 - [INFO] - aiogram.event - Update id=311888609 is handled. Duration 125 ms by bot id=7610043618
+2025-09-28 21:55:56,015 - [INFO] - aiogram.event - Update id=311888610 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 21:58:49,219 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:58:49,220 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:58:49,221 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:58:49,479 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:58:52,903 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:58:53,196 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:58:53,296 - [INFO] - aiogram.event - Update id=311888611 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 21:58:53,296 - [ERROR] - aiogram.event - Cause exception while process update id=311888611 by bot id=7610043618
+TypeError: startswith() takes at least 1 argument (0 given)
+Traceback (most recent call last):
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 113, in trigger
+    result, data = await handler.check(event, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 90, in check
+    check = await event_filter.call(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 44, in call
+    return await asyncio.to_thread(wrapped)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\magic_filter\magic.py", line 97, in resolve
+    return self._resolve(value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\magic_filter\magic.py", line 81, in _resolve
+    value = operation.resolve(value=value, initial_value=initial_value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kules\anaconda3\envs\TELEGRAM\Lib\site-packages\magic_filter\operations\call.py", line 17, in resolve
+    return value(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: startswith() takes at least 1 argument (0 given)
+2025-09-28 21:59:40,585 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 21:59:40,586 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 21:59:40,589 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 21:59:40,849 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:59:44,115 - [INFO] - aiogram.dispatcher - Start polling
+2025-09-28 21:59:44,570 - [INFO] - aiogram.dispatcher - Run polling for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
+2025-09-28 21:59:44,671 - [INFO] - aiogram.event - Update id=311888612 is not handled. Duration 0 ms by bot id=7610043618
+2025-09-28 22:00:38,114 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-09-28 22:00:38,116 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-09-28 22:00:38,116 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7610043618)
+2025-09-28 22:00:38,370 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ProteinHelpBot id=7610043618 - 'SystemHelp'
